@@ -62,6 +62,7 @@
 		</div>
 	</section>	
 
+	<!-- Works -->
 	<div class="works">
 		<div class="container">
 			<div class="works__nav">
@@ -201,7 +202,6 @@
 	</div><!--Reviews -->	
 
 	<!--News-->
-
 	<section class="news">
 		<div class="container">
 			<div class="news__header">
@@ -272,10 +272,11 @@
 						<a href="#" class="btn btn--sm">Read more</a>
 					</div><!-- /aritcels__item -->
 				</div> <!-- /articels__col -->
-				<div class="news__footer">
-					<a class="news__link" href="#">See more posts</a>
-				</div>
 			</div> <!-- /articels -->
+
+			<div class="news__footer">
+				<a class="news__link" href="#">See more posts</a>
+			</div>
 		</div> <!-- container -->
 	</section>
 
@@ -307,7 +308,7 @@
 							<img src="images/footer/twitter-gray.svg" width="20"  alt="">
 						</a>
 					</div>
-				</div><!-- /footer__credits -->
+				</div> <!-- /footer__credits -->
 				<div class="footer__nav">
 					<a class="footer__nav-link" href="#">Work</a>
 					<a class="footer__nav-link" href="#">About Me</a>
@@ -320,8 +321,53 @@
 		</div>
 	</footer>
 
+	<!-- Modals -->
+	<div class="modal" style="display: none;">
+		<div class="modal__dialog">
 
+			<button class="modal__close" type="botton">
+				<img src="images/modal/exit.svg" alt="Close">	
+			</button>
 
+			<div class="modal__work">
+				<div class="modal-work__preview">
+					<img class="modal-work__photo" src="https:placehold.it/790x780" alt="" >
+				</div>
+
+				<div class="modal-work__content">
+
+					<div class="moda-work__header">
+						<h3 class="modal-work__title">Project title</h3>	
+						<div class="modal-work__info">
+							category<span class="modal-work__info-divider">|</span>2018
+						</div>
+					</div>
+
+					<div class="modal-work__client">
+						<div class="modal-work__client-title">Client:</div>
+						<div class="modal-work__client-company">Creative Agency</div>	
+					</div>
+
+					<div class="modal-work__text">
+						<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Однажды злых, агенство оксмокс до там заголовок деревни текстов бросил не, осталось взгляд повстречался первую вопроса текстами, своих ведущими, правилами!</p>
+						<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Если точках назад инициал, деревни возвращайся рыбными, послушавшись рот оксмокс предупредила за реторический переулка. Рекламных, безопасную. Вопрос взобравшись ручеек гор?</p>
+					</div>
+
+					<div class="modal-work__footer">
+						<button class="modal-work__btn modal-work__btn--next" type="button">
+							<img src="images/modal/return.svg" height="14" alt="">
+							Previous
+						</button>
+						<button class="modal-work__btn modal-work__btn--prev" type="button">
+							Next
+							<img src="images/modal/right-arrow.svg" height="14" alt="">
+						</button>
+					</div>
+
+				</div><!-- /modal-work__content -->
+			</div><!-- /modal__work -->
+		</div><!-- /modal__dialog -->
+	</div><!-- /modal -->
 
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>			
 </body>
