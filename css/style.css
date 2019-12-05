@@ -23,16 +23,13 @@ body {
   color: #2b2a2c;
   border: 1px solid #fff;
 }
-body.no-scroll {
-  overflow: hidden;
-}
 /*Blocks*/
 .container {
   width: 100%;
   max-width: 1200px;
-  padding-left: 1rem;
-  padding-right: 1rem;
   margin: 0 auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 .header {
   padding: 1.2rem 0;
@@ -180,6 +177,10 @@ body.no-scroll {
   font-weight: bold;
   border-width: 2px;
   border-color: #2b2a2c;
+}
+.btn--thin {
+  min-width: 145px;
+  font-size: 0.8rem;
 }
 .works {
   margin: 2.8rem 0;
@@ -499,10 +500,10 @@ body.no-scroll {
   top: 0;
   left: 0;
   display: flex;
+  overflow: auto;
   width: 100%;
   height: 100%;
   padding: 0 1rem;
-  overflow: auto;
   background-color: rgba(0, 30, 57, 0.8);
 }
 .modal__dialog {
@@ -512,6 +513,9 @@ body.no-scroll {
   margin: auto;
   background-color: #fff;
 }
+.modal__dialog--sm {
+  max-width: 900px;
+}
 .modal__close {
   position: absolute;
   z-index: 1;
@@ -520,13 +524,34 @@ body.no-scroll {
   width: 34px;
   height: 39px;
   padding: 0;
-  background: none;
   cursor: pointer;
-  border: 0;
   transition: transform 0.2s linear;
+  border: 0;
+  background: none;
 }
 .modal__close:hover {
   transform: rotate(45deg);
+}
+.modal__content {
+  padding: 5rem 1rem;
+}
+.modal__title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3.6rem;
+  text-transform: uppercase;
+  color: #2b2a2c;
+}
+.modal__subtitle {
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #2b2a2c;
+}
+.modal__subtitle {
+  font-weight: 400;
+  font-style: 1.06rem;
+  text-transform: uppercase;
+  color: #2b2a2c;
 }
 .modal__work {
   display: flex;
@@ -596,21 +621,182 @@ body.no-scroll {
   justify-content: space-between;
 }
 .modal-work__btn {
-  font-size: 0.94rem;
-  cursor: pointer;
-  padding: 0;
-  text-transform: uppercase;
   font-family: inherit;
+  font-size: 0.94rem;
+  padding: 0;
+  cursor: pointer;
+  text-transform: uppercase;
   color: #2b2a2c;
   border: 0;
   background: none;
+}
+.timeline {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 768px;
+  margin: 4.2rem auto;
+}
+.timeline:before {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 50%;
+  display: block;
+  width: 1px;
+  height: 100%;
+  content: '';
+  background-color: #2b2a2c;
+}
+.timeline__col {
+  width: 50%;
+}
+.timeline__col--left {
+  padding-right: 3.2rem;
+  text-align: right;
+}
+.timeline__col--right {
+  padding-left: 3.2rem;
+  text-align: left;
+}
+.timeline__title {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+  text-transform: uppercase;
+  color: #2b2a2c;
+}
+.timeline__item {
+  margin-bottom: 2.6rem;
+}
+.timeline__item:last-child {
+  margin-bottom: 0;
+}
+.timeline__date {
+  font-size: 0.94em;
+  display: block;
+  margin-bottom: 0.8rem;
+  text-decoration: underline;
+  color: #2b2a2c;
+}
+.timeline__subtitle {
+  font-size: 1.06rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+  color: #2b2a2c;
+}
+.timeline__position {
+  font-size: 0.94rem;
+  font-style: italic;
+  color: #2b2a2c;
+}
+.timeline__text {
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-top: 0.8rem;
+  color: #6a696b;
+}
+.progress-bar {
+  margin-bottom: 2.6rem;
+}
+.progress-bar__item {
+  display: flex;
+  margin-bottom: 0.3rem;
+  align-items: center;
+}
+.progress-bar__title {
+  font-size: 0.94rem;
+  font-weight: 300;
+}
+.progress-bar__right {
+  padding-left: 1.2rem;
+}
+.progress-bar__bar {
+  width: 139px;
+  height: 6px;
+  background-color: #efefef;
+}
+.progress-bar__progress {
+  height: 100%;
+  transition: width 0.2s linear;
+  background-color: #6a696b;
+}
+.contact {
+  display: flex;
+  background: url(https:placehold.it/477x700) right center no-repeat;
+}
+.contact__left {
+  width: 47%;
+  padding: 2rem;
+}
+.contact__info {
+  font-size: 0.94rem;
+  font-weight: 300;
+  margin: 2rem 0 3rem;
+  padding: 0;
+  list-style: none;
+  color: #2b2a2c;
+}
+.contact__info-item {
+  display: flex;
+  margin-bottom: 0.75rem;
+  align-items: center;
+}
+.contact__info-item:last-child {
+  margin-bottom: 0;
+}
+.contact__info-icon {
+  margin-right: 0.75rem;
+}
+.form__group {
+  margin-bottom: 1.8rem;
+}
+.form__label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  color: #2b2a2c;
+}
+.form__input,
+.form__textarea {
+  font-family: inherit;
+  font-weight: 300;
+  font-style: 0.8rem;
+  line-height: 1.2;
+  display: block;
+  width: 100%;
+  padding: 1.3rem 1.8rem;
+  color: #2b2a2c;
+  border: 1px solid rgba(112, 112, 112, 0.3);
+  border-radius: 1.8rem;
+}
+.form__input:focus,
+.form__textarea:focus {
+  border-color: #36abc7;
+  outline: none;
+}
+.form__input::placeholder,
+.form__textarea::placeholder {
+  color: #2b2a2c;
+}
+.form__textarea {
+  height: 200px;
+  resize: none;
 }
 /*helper*/
 .text-center {
   text-align: center;
 }
+.text-right {
+  text-align: right;
+}
 .img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+.mb-0 {
+  margin-bottom: 0;
 }
