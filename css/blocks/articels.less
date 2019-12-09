@@ -1,106 +1,76 @@
 // main: ../style.less
-
-.articels
-{
+.articels {
     display: flex;
-
     margin: 0 -1rem;
-
     flex-wrap: wrap;
 }
 
-.articels__col
-{
+.articels__col {
     width: 33.33333%;
     padding: 0 1rem;
 }
 
-.aritcels__item
-{
+.aritcels__item {
     margin-bottom: 2rem;
 }
 
-.articels__header
-{
+.articels__header {
     position: relative;
-
     margin-bottom: 1.35rem;
 }
 
-.articels__date
-{
+.articels__date {
     font-size: 1.06rem;
     line-height: 1.4;
-
     position: absolute;
     z-index: 1;
     top: 0;
     left: 0;
-
     display: flex;
-
     width: 77px;
     height: 77px;
-
     text-align: center;
-
     color: @white;
     background-color: @black;
-
     align-items: center;
     justify-content: center;
 }
-.articels__photo
-{
-    display: block;
 
+.articels__photo {
+    display: block;
     max-width: 100%;
     height: auto;
 }
-.articels__content
-{
+
+.articels__content {
     margin-bottom: 2rem;
 }
 
-.articels__title
-{
+.articels__title {
     font-size: 1.2rem;
     font-weight: 700;
-
     margin-bottom: .6rem;
-
     text-transform: uppercase;
-
     color: @black;
-
-    a
-    {
+    a {
         text-decoration: none;
-
         color: inherit;
-
-        &:hover
-        {
+        &:hover {
             text-decoration: underline;
         }
     }
 }
 
-.articels__cat
-{
+.articels__cat {
     font-size: .8rem;
-
     margin-bottom: 1.5rem;
-
     text-transform: uppercase;
-
     color: @black;
 }
-.articels__text
-{
+
+.articels__text {
     font-size: .8rem;
     font-weight: 300;
     line-height: 2;
-
     color: @gray;
 }

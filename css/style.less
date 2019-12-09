@@ -1,46 +1,41 @@
 //comress: false
-
 @import 'vars';
-
 *,
 *:before,
-*:after
-{
+*:after {
     box-sizing: border-box;
 }
 
-html
-{
+html {
     font-size: 15px;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6
-{
+h6 {
     margin: 0;
 }
 
-p
-{
+p {
     margin: 0 0 1rem;
 }
 
-body
-{
+body {
     font-size: 1rem;
-
     margin: 0;
-
     color: @black;
     border: 1px solid @white;
-    &.no-scroll{
-    	overflow: hidden;
+    &.no-scroll {
+        // overflow: hidden;
     }
 }
+
+
 /*Blocks*/
+
 @import 'blocks/container';
 @import 'blocks/header';
 @import 'blocks/user';
@@ -58,8 +53,11 @@ body
 @import 'blocks/footer';
 @import 'blocks/modal';
 @import 'blocks/modal__work';
-
-
+@import 'blocks/timeline';
+@import 'blocks/progress-bar';
+@import 'blocks/contact';
+@import 'blocks/form';
 
 /*helper*/
+
 @import 'helper';
