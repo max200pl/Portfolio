@@ -22,7 +22,11 @@ body {
   font-size: 1rem;
   margin: 0;
   color: #2b2a2c;
+<<<<<<< HEAD
   border: 1px solid #ffffff;
+=======
+  border: 1px solid #fff;
+>>>>>>> 2de5db345940b240990541c0b512d283cf67f005
 }
 /*Blocks*/
 .container {
@@ -182,7 +186,11 @@ body {
 .btn--thin {
   min-width: 145px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-size: .8rem;
+=======
+  font-size: 0.8rem;
+>>>>>>> 2de5db345940b240990541c0b512d283cf67f005
 =======
   font-size: 0.8rem;
 >>>>>>> 2de5db345940b240990541c0b512d283cf67f005
@@ -508,6 +516,9 @@ body {
   display: none;
 =======
   display: flex;
+<<<<<<< HEAD
+>>>>>>> 2de5db345940b240990541c0b512d283cf67f005
+=======
 >>>>>>> 2de5db345940b240990541c0b512d283cf67f005
   overflow: auto;
   width: 100%;
@@ -537,6 +548,9 @@ body {
 .modal__dialog--sm {
   max-width: 900px;
 }
+.modal__dialog--sm {
+  max-width: 900px;
+}
 .modal__close {
   position: absolute;
   z-index: 1;
@@ -547,7 +561,11 @@ body {
   padding: 0;
   cursor: pointer;
 <<<<<<< HEAD
+<<<<<<< HEAD
   transition: transform .2s linear;
+=======
+  transition: transform 0.2s linear;
+>>>>>>> 2de5db345940b240990541c0b512d283cf67f005
 =======
   transition: transform 0.2s linear;
 >>>>>>> 2de5db345940b240990541c0b512d283cf67f005
@@ -648,7 +666,11 @@ body {
 .modal-work__btn {
   font-family: inherit;
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-size: .94rem;
+=======
+  font-size: 0.94rem;
+>>>>>>> 2de5db345940b240990541c0b512d283cf67f005
 =======
   font-size: 0.94rem;
 >>>>>>> 2de5db345940b240990541c0b512d283cf67f005
@@ -703,9 +725,15 @@ body {
 }
 .timeline__date {
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-size: .94em;
   display: block;
   margin-bottom: .8rem;
+=======
+  font-size: 0.94em;
+  display: block;
+  margin-bottom: 0.8rem;
+>>>>>>> 2de5db345940b240990541c0b512d283cf67f005
 =======
   font-size: 0.94em;
   display: block;
@@ -718,32 +746,44 @@ body {
   font-size: 1.06rem;
   font-weight: 700;
 <<<<<<< HEAD
+<<<<<<< HEAD
   margin-bottom: .2rem;
   color: #2b2a2c;
 }
 .timeline__position {
   font-size: .94rem;
 =======
+=======
+>>>>>>> 2de5db345940b240990541c0b512d283cf67f005
   margin-bottom: 0.2rem;
   color: #2b2a2c;
 }
 .timeline__position {
   font-size: 0.94rem;
+<<<<<<< HEAD
+>>>>>>> 2de5db345940b240990541c0b512d283cf67f005
+=======
 >>>>>>> 2de5db345940b240990541c0b512d283cf67f005
   font-style: italic;
   color: #2b2a2c;
 }
 .timeline__text {
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-size: .8rem;
   font-weight: 300;
   line-height: 1.5;
   margin-top: .8rem;
 =======
+=======
+>>>>>>> 2de5db345940b240990541c0b512d283cf67f005
   font-size: 0.8rem;
   font-weight: 300;
   line-height: 1.5;
   margin-top: 0.8rem;
+<<<<<<< HEAD
+>>>>>>> 2de5db345940b240990541c0b512d283cf67f005
+=======
 >>>>>>> 2de5db345940b240990541c0b512d283cf67f005
   color: #6a696b;
 }
@@ -753,17 +793,23 @@ body {
 .progress-bar__item {
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   margin-bottom: .3rem;
   align-items: center;
 }
 .progress-bar__title {
   font-size: .94rem;
 =======
+=======
+>>>>>>> 2de5db345940b240990541c0b512d283cf67f005
   margin-bottom: 0.3rem;
   align-items: center;
 }
 .progress-bar__title {
   font-size: 0.94rem;
+<<<<<<< HEAD
+>>>>>>> 2de5db345940b240990541c0b512d283cf67f005
+=======
 >>>>>>> 2de5db345940b240990541c0b512d283cf67f005
   font-weight: 300;
 }
@@ -778,7 +824,11 @@ body {
 .progress-bar__progress {
   height: 100%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   transition: width .2s linear;
+=======
+  transition: width 0.2s linear;
+>>>>>>> 2de5db345940b240990541c0b512d283cf67f005
 =======
   transition: width 0.2s linear;
 >>>>>>> 2de5db345940b240990541c0b512d283cf67f005
@@ -794,7 +844,11 @@ body {
 }
 .contact__info {
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-size: .94rem;
+=======
+  font-size: 0.94rem;
+>>>>>>> 2de5db345940b240990541c0b512d283cf67f005
 =======
   font-size: 0.94rem;
 >>>>>>> 2de5db345940b240990541c0b512d283cf67f005
@@ -807,7 +861,11 @@ body {
 .contact__info-item {
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   margin-bottom: .75rem;
+=======
+  margin-bottom: 0.75rem;
+>>>>>>> 2de5db345940b240990541c0b512d283cf67f005
 =======
   margin-bottom: 0.75rem;
 >>>>>>> 2de5db345940b240990541c0b512d283cf67f005
@@ -818,7 +876,11 @@ body {
 }
 .contact__info-icon {
 <<<<<<< HEAD
+<<<<<<< HEAD
   margin-right: .75rem;
+=======
+  margin-right: 0.75rem;
+>>>>>>> 2de5db345940b240990541c0b512d283cf67f005
 =======
   margin-right: 0.75rem;
 >>>>>>> 2de5db345940b240990541c0b512d283cf67f005
@@ -828,15 +890,21 @@ body {
 }
 .form__label {
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-size: .8rem;
   font-weight: 700;
   display: inline-block;
   margin-bottom: .6rem;
 =======
+=======
+>>>>>>> 2de5db345940b240990541c0b512d283cf67f005
   font-size: 0.8rem;
   font-weight: 700;
   display: inline-block;
   margin-bottom: 0.6rem;
+<<<<<<< HEAD
+>>>>>>> 2de5db345940b240990541c0b512d283cf67f005
+=======
 >>>>>>> 2de5db345940b240990541c0b512d283cf67f005
   color: #2b2a2c;
 }
@@ -845,7 +913,11 @@ body {
   font-family: inherit;
   font-weight: 300;
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-style: .8rem;
+=======
+  font-style: 0.8rem;
+>>>>>>> 2de5db345940b240990541c0b512d283cf67f005
 =======
   font-style: 0.8rem;
 >>>>>>> 2de5db345940b240990541c0b512d283cf67f005
@@ -869,7 +941,10 @@ body {
 .form__textarea {
   height: 200px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   text-align: center;
+=======
+>>>>>>> 2de5db345940b240990541c0b512d283cf67f005
 =======
 >>>>>>> 2de5db345940b240990541c0b512d283cf67f005
   resize: none;
@@ -890,8 +965,11 @@ body {
   margin-bottom: 0;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .hide {
   display: none;
 }
+=======
+>>>>>>> 2de5db345940b240990541c0b512d283cf67f005
 =======
 >>>>>>> 2de5db345940b240990541c0b512d283cf67f005
