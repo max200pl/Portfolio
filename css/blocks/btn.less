@@ -1,7 +1,6 @@
 // main: ../style.less
 
-.btn
-{
+.btn {
     font-family: inherit;
     font-size: 1.1rem;
     line-height: 1.1;
@@ -9,11 +8,11 @@
     display: inline-block;
 
     min-width: 170px;
-    padding: 1.05em 1.8em; 
+    padding: 1.05em 1.8em;
 
     transition: background-color .2s linear,
-    color .2s linear, box-shadow .2s linear,
-    border-color .2s linear;
+        color .2s linear, box-shadow .2s linear,
+        border-color .2s linear;
 
     text-align: center;
     vertical-align: top;
@@ -23,19 +22,19 @@
     color: @black;
     border: 1px solid @gray;
     border-radius: 1.8em;
-    &:hover
-    {
+
+    &:hover {
         color: @white;
         background-color: @black;
         box-shadow: 2px 2px 10px fade(#000, 24%)
     }
 
-    + .btn{
-    	margin-left: 15px;
+    + .btn {
+        margin-left: 15px;
     }
 
     // Modificator
-    &--sm{
+    &--sm {
         min-width: 0;
         padding: 0.6em 1.1em;
         font-size: 0.94rem;
@@ -44,7 +43,7 @@
         border-color: @black;
     }
 
-    &--thin{
+    &--thin {
         min-width: 145px;
         font-size: .8rem;
     }

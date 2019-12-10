@@ -1,7 +1,6 @@
 // main: ../style.less
 
-.nav
-{
+.nav {
     display: flex;
 
     height: 100%;
@@ -9,8 +8,7 @@
     align-items: center;
 }
 
-.nav__link
-{
+.nav__link {
     font-size: .93rem;
     font-weight: 700;
 
@@ -23,8 +21,7 @@
 
     color: @black;
 
-    &:after
-    {
+    &:after {
         position: absolute;
         z-index: 1;
         bottom: -5px;
@@ -39,27 +36,23 @@
         background-color: @black;
     }
 
-    &:hover:not(.nav__link--btn)
-    {
-        &:after
-        {
+    &:hover:not(.nav__link--btn) {
+        &:after {
             width: 100%;
         }
     }
 
-    &--btn
-    {
+    &--btn {
         padding: .66rem 2rem;
 
-        transition: 
-        background-color .2s linear,
-        .2s color linear;
+        transition:
+            background-color .2s linear,
+            .2s color linear;
 
         border: 2px solid @black;
         border-radius: 20px;
 
-        &:hover
-        {
+        &:hover {
             color: @white;
             background-color: @black;
         }

@@ -24,6 +24,9 @@ body {
   color: #2b2a2c;
   border: 1px solid #ffffff;
 }
+body.no-scroll {
+  overflow: hidden;
+}
 /*Blocks*/
 .container {
   width: 100%;
@@ -500,12 +503,19 @@ body {
   z-index: 1000;
   top: 0;
   left: 0;
-  display: flex;
+  display: none;
   overflow: auto;
   width: 100%;
   height: 100%;
   padding: 0 1rem;
   background-color: rgba(0, 30, 57, 0.8);
+}
+.modal.show {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
 }
 .modal__dialog {
   position: relative;
@@ -513,6 +523,8 @@ body {
   max-width: 1200px;
   margin: auto;
   background-color: #fff;
+  transform: scale(0);
+  transition: transform .2s linear;
 }
 .modal__dialog--sm {
   max-width: 900px;
