@@ -1,17 +1,26 @@
 // main: ../style.less
 .articels {
     display: flex;
-    margin: 0 -1rem;
     flex-wrap: wrap;
+    margin: 0 -1rem;
 }
 
 .articels__col {
     width: 33.33333%;
     padding: 0 1rem;
+
+    @media @mobile {
+        width: 100%;
+    }
 }
 
 .aritcels__item {
     margin-bottom: 2rem;
+
+    @media @mobile {
+        max-width: 370px;
+        margin: 0 auto 2rem;
+    }
 }
 
 .articels__header {

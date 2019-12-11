@@ -2,10 +2,32 @@
 
 .nav {
     display: flex;
+    flex-wrap: wrap;
 
     height: 100%;
 
     align-items: center;
+
+    @media @mobile {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 1000;
+        display: none;
+
+        background-color: #fff;
+
+        box-shadow: 0 5px 10px rgba(0,0,0, .3);
+
+        text-align: center;
+
+        &.show {
+            display: flex;
+        }
+    }
 }
 
 .nav__link {
@@ -56,5 +78,11 @@
             color: @white;
             background-color: @black;
         }
+    }
+
+    @media @mobile {
+        width: 100%;
+        margin-left: 0;
+        padding: .5rem 1rem;
     }
 }

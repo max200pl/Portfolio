@@ -22,10 +22,10 @@
                             <br> Maksym </div>
                         <div class="user__pof">Frontend Developer</div>
                     </div>
-                </div>
-                <!-- /user -->
+                </div><!-- /user -->
 
-                <nav class="nav">
+
+                <nav class="nav" id="nav">
                     <a class="nav__link" href="#">WORK</a>
                     <a class="nav__link" href="#">ABOUT ME</a>
                     <a class="nav__link" href="#">BLOG</a>
@@ -33,8 +33,12 @@
                     <a class="nav__link nav__link--btn" href="#" data-modal="#modal_hire-me">HIRE ME</a>
                 </nav>
 
-            </div>
-            <!-- /header__inner -->
+                <button class="burger" type="button" id="navToggle">
+                    <img class="burger__icon" src="images/menu/menu.svg" alt="">
+                </button>
+
+            </div><!-- /header__inner -->
+
         </div>
     </header>
     <!-- /Header -->
@@ -60,11 +64,12 @@
                     <a class="btn" href="#" data-modal="#modal_hire-me">Hire Me</a>
                     <a class="btn" href="#" data-modal="#modal_resume">See My Resume</a>
 
-                </div>
-                <!-- /Intro__content -->
+                </div><!-- /Intro__content -->
+
                 <img class="intro__photo" src="images/intro/intro__photo.png" alt="">
-            </div>
-            <!-- /Intro__inner -->
+
+            </div><!-- /Intro__inner -->
+
         </div>
     </section>
     <!-- /Intro -->
@@ -171,7 +176,7 @@
                 </div>
 
                 <div class="about__content">
-                    <h3 class="about__title"> me</h3>
+                    <h3 class="about__title">About me</h3>
                     <h2 class="about__bigtitle">Who am i</h2>
 
                     <div class="about__text">
@@ -184,10 +189,12 @@
                     <a class="btn" href="#" data-modal="#modal_resume">See My Resume</a>
 
                 </div>
+
             </div>
             <!-- About__inner -->
         </div>
     </section>
+    <!-- /About -->
 
     <!-- Reviews -->
     <div class="reviews">
@@ -234,8 +241,7 @@
                     <div class="aritcels__item">
 
                         <div class="articels__header">
-                            <time class="articels__date"> 10
-                                <br>june </time>
+                            <time class="articels__date">10<br>june</time>
                             <a href=""> <img class="articels__photo" src="https:placehold.it/370x257" alt=""> </a>
                         </div>
 
@@ -314,6 +320,7 @@
         </div>
         <!-- container -->
     </section>
+    <!--/News-->
 
     <!-- Footer -->
     <footer class="footer">
@@ -336,9 +343,9 @@
             <!-- /footer__inner -->
         </div>
     </footer>
+    <!-- /Footer -->
 
-    <!-- Modal -->
-
+    <!-- Modal_1_1 -->
     <div class="modal" id="modal_project">
 
         <div class="modal__dialog">
@@ -399,11 +406,9 @@
         </div>
         <!-- /modal__dialog -->
     </div>
+    <!-- /Modal_1_1 -->
 
-    <!-- /modal -->
-
-        <!-- Modal 2 -->
-
+    <!-- Modal_1_2 -->
     <div class="modal" id="modal_project_2">
 
         <div class="modal__dialog">
@@ -464,8 +469,7 @@
         </div>
         <!-- /modal__dialog -->
     </div>
-
-    <!-- /modal -->
+    <!-- /Modal_1_2 -->
 
     <!-- Modals 2 -->
     <div class="modal" id="modal_resume">
@@ -663,7 +667,8 @@
     </div>
     <!-- /modal 3 -->
 
-    <!--     /*JS*/ -->
+    <!--  /*JS*/ -->
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/ap.js"></script>
-</body></html>
+</body>
+</html>
