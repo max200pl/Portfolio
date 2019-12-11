@@ -92,7 +92,9 @@
                 </div>
 
                 <div class="portfolio__col" data-cat="website">
-                    <div class="work"> <img class="work__image" src="https:placehold.it/370x300" alt="">
+
+                    <div class="work" data-modal="#modal_project_2">
+                       <img class="work__image" src="https:placehold.it/370x300" alt="">
                         <div class="work__content">
                             <div class="work__cat">category:website</div>
                             <div class="work__title"> Project title
@@ -198,10 +200,17 @@
                     <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Курсивных составитель пустился возвращайся прямо ее приставка послушавшись буквенных необходимыми бросил предложения, даль агенство силуэт. На берегу буквенных, вскоре языком диких!</p>
                 </div>
 
-                <div class="reviews__author"> <img class="reviews__photo" src="https:placehold.it/103/333" alt="">
+                <div class="reviews__author">
+                   <img class="reviews__photo" src="https:placehold.it/103/333" alt="">
                     <div class="reviews__name">Shtanov Valery</div>
                     <div class="reviews__company">Electrical components company </div>
-                    <div class="reviews__rating"> <img class="reviews__star" src="images/Reviews/pointed-star.svg" width="13" height="13" alt=""> <img class="reviews__star" src="images/Reviews/pointed-star.svg" width="13" height="13" alt=""> <img class="reviews__star" src="images/Reviews/pointed-star.svg" width="13" height="13" alt=""> <img class="reviews__star" src="images/Reviews/pointed-star.svg" width="13" height="13" alt=""> <img class="reviews__star reviews__star--unactive" src="images/Reviews/pointed-star.svg" width="13" height="13" alt=""> </div>
+                    <div class="reviews__rating">
+                        <img class="reviews__star" src="images/Reviews/pointed-star.svg" width="13" height="13" alt="">
+                        <img class="reviews__star" src="images/Reviews/pointed-star.svg" width="13" height="13" alt="">
+                        <img class="reviews__star" src="images/Reviews/pointed-star.svg" width="13" height="13" alt="">
+                        <img class="reviews__star" src="images/Reviews/pointed-star.svg" width="13" height="13" alt="">
+                        <img class="reviews__star reviews__star--unactive" src="images/Reviews/pointed-star.svg" width="13" height="13" alt="">
+                    </div>
                 </div>
 
             </div>
@@ -290,7 +299,9 @@
                             <div class="articels__text">
                                 <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Жизни букв вопрос свое толку журчит своего меня грустный, безорфографичный до речью щеке сих переписывается ты вопроса его текста дороге.</p>
                             </div>
-                        </div> <a href="#" class="btn btn--sm">Read more</a>
+                        </div>
+
+                        <a href="#" class="btn btn--sm">Read more</a>
                     </div>
                     <!-- /aritcels__item -->
                 </div>
@@ -326,20 +337,29 @@
         </div>
     </footer>
 
-    <!-- Modals -->
+    <!-- Modal -->
 
     <div class="modal" id="modal_project">
 
-    <div class="modal__dialog">
+        <div class="modal__dialog">
 
-        <button class="modal__close" type="button" data-close>
-            <img src="images/modal/exit.svg" alt="Close">
-        </button>
+            <button class="modal__close" type="button" data-close>
+                <img src="images/modal/exit.svg" alt="Close">
+            </button>
 
-        <div class="modal-work">
-            <div class="modal-work__preview">
-                <img class="modal-work__photo" src="https://placehold.it/790x780" alt="">
-            </div>
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <!-- Подключение слайдера -->
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__photo" src="https://placehold.it/790x780" alt="">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="https://placehold.it/790x780" alt="">
+                        </div>
+                    </div>
+                    <!-- Подключение слайдера -->
+                </div>
 
                 <div class="modal-work__content">
 
@@ -359,8 +379,82 @@
                     </div>
 
                     <div class="modal-work__footer">
-                        <button class="modal-work__btn modal-work__btn--next" type="button"> <img src="images/modal/return.svg" height="14" alt=""> Previous </button>
-                        <button class="modal-work__btn modal-work__btn--prev" type="button"> Next <img src="images/modal/right-arrow.svg" height="14" alt=""> </button>
+                        <!--Добовление кнопок изменения работы в окене -->
+                        <button class="modal-work__btn slickPrev" type="button">
+                            <img src="images/modal/return.svg" height="14" alt="">
+                            Previous
+                        </button>
+
+                        <button class="modal-work__btn slickNext" type="button">
+                            Next
+                            <img src="images/modal/right-arrow.svg" height="14" alt="">
+                        </button>
+                        <!--/Добовление кнопок изменения работы в окене -->
+                    </div>
+
+                </div>
+                <!-- /modal-work__content -->
+            </div>
+            <!-- /modal__work -->
+        </div>
+        <!-- /modal__dialog -->
+    </div>
+
+    <!-- /modal -->
+
+        <!-- Modal 2 -->
+
+    <div class="modal" id="modal_project_2">
+
+        <div class="modal__dialog">
+
+            <button class="modal__close" type="button" data-close>
+                <img src="images/modal/exit.svg" alt="Close">
+            </button>
+
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <!-- Подключение слайдера -->
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__photo" src="https://placehold.it/790x780" alt="">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="https://placehold.it/790x780" alt="">
+                        </div>
+                    </div>
+                    <!-- Подключение слайдера -->
+                </div>
+
+                <div class="modal-work__content">
+
+                    <div class="moda-work__header">
+                        <h3 class="modal-work__title">Project title 2</h3>
+                        <div class="modal-work__info"> category<span class="modal-work__info-divider">|</span>2018 </div>
+                    </div>
+
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Client:</div>
+                        <div class="modal-work__client-company">Creative Agency</div>
+                    </div>
+
+                    <div class="modal-work__text">
+                        <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Однажды злых, агенство оксмокс до там заголовок деревни текстов бросил не, осталось взгляд повстречался первую вопроса текстами, своих ведущими, правилами!</p>
+                        <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Если точках назад инициал, деревни возвращайся рыбными, послушавшись рот оксмокс предупредила за реторический переулка. Рекламных, безопасную. Вопрос взобравшись ручеек гор?</p>
+                    </div>
+
+                    <div class="modal-work__footer">
+                        <!--Добовление кнопок изменения работы в окене -->
+                        <button class="modal-work__btn slickPrev" type="button">
+                            <img src="images/modal/return.svg" height="14" alt="">
+                            Previous
+                        </button>
+
+                        <button class="modal-work__btn slickNext" type="button">
+                            Next
+                            <img src="images/modal/right-arrow.svg" height="14" alt="">
+                        </button>
+                        <!--/Добовление кнопок изменения работы в окене -->
                     </div>
 
                 </div>
@@ -570,7 +664,6 @@
     <!-- /modal 3 -->
 
     <!--     /*JS*/ -->
-    <script type="text/javascript" src="ap.js"></script>
-</body>
-
-</html>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/ap.js"></script>
+</body></html>
