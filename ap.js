@@ -1,15 +1,22 @@
-/*FILTER*/
-$(function () {
-    let filter = $("[data-filter]"); // отслеживание клика по data-filter
-    filter.on("click", function (event) {
-        event.preventDefault(); // убираем стандартное поведение ссылок
+$(function() {
+
+
+    /* Filter
+    =====================*/
+    let filter = $("[data-filter]");
+
+    filter.on("click", function(event) {
+        event.preventDefault();
+
         let cat = $(this).data('filter');
-        if (cat == 'all') {
+
+        if(cat == 'all') {
             $("[data-cat]").removeClass("hide");
         } else {
-            $("[data-cat]").each(function () {
-                let work__cat = $(this).data('cat');
-                if (work__cat != cat) {
+            $("[data-cat]").each(function() {
+                let workCat = $(this).data('cat');
+
+                if(workCat != cat) {
                     $(this).addClass('hide');
                 } else {
                     $(this).removeClass('hide');
@@ -18,61 +25,63 @@ $(function () {
         }
     });
 
-    /*MODAL*/
+
+
+
+    /* Modal
+    =====================*/
+
     const modalCall = $("[data-modal]");
     const modalClose = $("[data-close]");
 
-    modalCall.on("click", function (event) { //при клике вызываем функцию
-        event.preventDefault() // отмена свойст кнопки
+    modalCall.on("click", function(event) {
+        event.preventDefault();
 
         let $this = $(this);
         let modalId = $this.data('modal');
 
-        $(modalId).addClass('show'); //подставляем # селектрой ID
+        $(modalId).addClass('show');
         $("body").addClass('no-scroll');
 
-        setTimeout(function () {
+        setTimeout(function() {
             $(modalId).find(".modal__dialog").css({
                 transform: "scale(1)"
             });
         }, 200);
-
     });
 
-    modalClose.on("click", function (event) { //при клике вызываем функцию
-        event.preventDefault() // отмена свойст кнопки
+
+    modalClose.on("click", function(event) {
+        event.preventDefault();
+
         let $this = $(this);
-        let modalParent = $this.parents('.modal'); //получаем радительский элемент
+        let modalParent = $this.parents('.modal');
 
         modalParent.find(".modal__dialog").css({
             transform: "scale(0)"
         });
 
-
-        setTimeout(function () {
-            modalParent.removeClass('show'); //подставляем # селектрой ID
+        setTimeout(function() {
+            modalParent.removeClass('show');
             $("body").removeClass('no-scroll');
         }, 200);
     });
 
 
-    $(".modal").on("click", function (event) { //при клике вызываем функцию
+    $(".modal").on("click", function(event) {
         let $this = $(this);
 
         $this.find(".modal__dialog").css({
             transform: "scale(0)"
         });
 
-
-        setTimeout(function () {
-            $this.removeClass('show'); //подставляем # селектрой ID
+        setTimeout(function() {
+            $this.removeClass('show');
             $("body").removeClass('no-scroll');
         }, 200);
-
     });
 
-
-    $(".modal__dialog").on("click", function (event) { //при клике вызываем функцию
+    $(".modal__dialog").on("click", function(event) {
         event.stopPropagation();
     });
 
