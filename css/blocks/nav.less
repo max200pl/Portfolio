@@ -20,7 +20,7 @@
 
         background-color: #fff;
 
-        box-shadow: 0 5px 10px rgba(0,0,0, .3);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
 
         text-align: center;
 
@@ -41,7 +41,7 @@
     text-decoration: none;
     text-transform: uppercase;
 
-    color: @black;
+    color: @white;
 
     &:after {
         position: absolute;
@@ -55,7 +55,7 @@
         content: '';
         transition: width .2s linear;
 
-        background-color: @black;
+        background-color: @white;
     }
 
     &:hover:not(.nav__link--btn) {
@@ -71,12 +71,16 @@
             background-color .2s linear,
             .2s color linear;
 
-        border: 2px solid @black;
+        border: 2px solid @white;
         border-radius: 20px;
 
         &:hover {
-            color: @white;
-            background-color: @black;
+            color: #000;
+            background-color: @white;
+            box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+            transform: translateY(-7px);
+            transition: all 0.7s ease-in-out;
+            border: 1px solid @white;
         }
     }
 

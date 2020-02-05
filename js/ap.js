@@ -1,36 +1,45 @@
 $(function () {
+    const worksSlider = $('[data-slider="slick"]');
 
-    const worksSlider= $('[data-slider="slick"]');
+    /* Header ==============*/
+
+    $('.nav a[href^="#"]').click(function () {
+        let offset = $(".header").innerHeight();
+        let target = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(target).offset().top - offset
+        }, 500);
+        return false;
+    });
+
+
 
     /* Filter
-    =====================*/
+      =====================*/
     let filter = $("[data-filter]");
 
     filter.on("click", function (event) {
         event.preventDefault();
 
-        let cat = $(this).data('filter');
+        let cat = $(this).data("filter");
 
-        if (cat == 'all') {
+        if (cat == "all") {
             $("[data-cat]").removeClass("hide");
         } else {
             $("[data-cat]").each(function () {
-                let workCat = $(this).data('cat');
+                let workCat = $(this).data("cat");
 
                 if (workCat != cat) {
-                    $(this).addClass('hide');
+                    $(this).addClass("hide");
                 } else {
-                    $(this).removeClass('hide');
+                    $(this).removeClass("hide");
                 }
             });
         }
     });
 
-
-
-
     /* Modal
-    =====================*/
+      =====================*/
 
     const modalCall = $("[data-modal]");
     const modalClose = $("[data-close]");
@@ -39,37 +48,37 @@ $(function () {
         event.preventDefault();
 
         let $this = $(this);
-        let modalId = $this.data('modal');
+        let modalId = $this.data("modal");
 
-        $(modalId).addClass('show');
-        $("body").addClass('no-scroll');
+        $(modalId).addClass("show");
+        $("body").addClass("no-scroll");
 
         setTimeout(function () {
-            $(modalId).find(".modal__dialog").css({
-                transform: "scale(1)"
-            });
+            $(modalId)
+                .find(".modal__dialog")
+                .css({
+                    transform: "scale(1)"
+                });
         }, 200);
 
-      worksSlider.slick('setPosition');
+        worksSlider.slick("setPosition");
     });
-
 
     modalClose.on("click", function (event) {
         event.preventDefault();
 
         let $this = $(this);
-        let modalParent = $this.parents('.modal');
+        let modalParent = $this.parents(".modal");
 
         modalParent.find(".modal__dialog").css({
             transform: "scale(0)"
         });
 
         setTimeout(function () {
-            modalParent.removeClass('show');
-            $("body").removeClass('no-scroll');
+            modalParent.removeClass("show");
+            $("body").removeClass("no-scroll");
         }, 200);
     });
-
 
     $(".modal").on("click", function (event) {
         let $this = $(this);
@@ -79,16 +88,14 @@ $(function () {
         });
 
         setTimeout(function () {
-            $this.removeClass('show');
-            $("body").removeClass('no-scroll');
+            $this.removeClass("show");
+            $("body").removeClass("no-scroll");
         }, 200);
     });
 
     $(".modal__dialog").on("click", function (event) {
         event.stopPropagation();
     });
-
-
 
     /* Slider: https://kenwheeler.github.io/slick/ ===========*/
 
@@ -101,31 +108,33 @@ $(function () {
         dots: true // добовление точек
     });
 
-    $(".slickPrev").on("click", function(event){
+    $(".slickPrev").on("click", function (event) {
         event.preventDefault();
 
-        let currentSlider=$(this).parents('.modal').find('[data-slider="slick"]');
+        let currentSlider = $(this)
+            .parents(".modal")
+            .find('[data-slider="slick"]');
 
         currentSlider.slick("slickPrev");
     });
 
-    $(".slickNext").on("click", function(event){
+    $(".slickNext").on("click", function (event) {
         event.preventDefault();
 
-        let currentSlider=$(this).parents('.modal').find('[data-slider="slick"]');
+        let currentSlider = $(this)
+            .parents(".modal")
+            .find('[data-slider="slick"]');
 
         currentSlider.slick("slickNext");
     });
 
     /* Mobli nav ========================*/
-    const navToggle =$("#navToggle");
-    const nav =$("#nav");
+    const navToggle = $("#navToggle");
+    const nav = $("#nav");
 
-    $("#navToggle").on("click", function(event){
+    $("#navToggle").on("click", function (event) {
         event.preventDefault();
 
         nav.toggleClass("show");
-
     });
-
 });

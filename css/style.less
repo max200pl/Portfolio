@@ -1,5 +1,8 @@
 //comress: false
 @import 'vars';
+@import 'mixins/mixin';
+
+
 
 *,
 *:before,
@@ -27,15 +30,20 @@ p {
 body {
     font-size: 1rem;
     margin: 0;
-    color: @black;
+    color: @white;
     border: 1px solid @white;
+    background-image: linear-gradient(to left top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 
     &.no-scroll {
         overflow: hidden;
     }
 }
+
 /*Vendor*/
 @import "vendor/slick";
+
+
+/*mixin*/
 
 
 

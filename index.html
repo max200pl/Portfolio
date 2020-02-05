@@ -2,673 +2,595 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+     <meta charset="UTF-8">
+     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,700&display=swap&subset=cyrillic-ext"
+          rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Portfolio</title>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <div class="user">
-                    <div class="user__avatar"> <img src="https:placehold.it/57/333" alt=""> </div>
-                    <div class="user__content">
-                        <div class="user__name">Poskanniy
-                            <br> Maksym </div>
-                        <div class="user__pof">Frontend Developer</div>
-                    </div>
-                </div><!-- /user -->
+     <!-- Header -->
+     <header class="header">
+          <div class="container">
+               <div class="header__inner">
+                    <div class="user">
+                         <div class="user__avatar"> <img src="https:placehold.it/57/333" alt=""> </div>
+                         <div class="user__content">
+                              <div class="user__name">Poskanniy
+                                   <br> Maksym </div>
+                              <div class="user__pof">Frontend Developer</div>
+                         </div>
+                    </div><!-- /user -->
 
 
-                <nav class="nav" id="nav">
-                    <a class="nav__link" href="#">WORK</a>
-                    <a class="nav__link" href="#">ABOUT ME</a>
-                    <a class="nav__link" href="#">BLOG</a>
-                    <a class="nav__link" href="#">CONTACT</a>
-                    <a class="nav__link nav__link--btn" href="#" data-modal="#modal_hire-me">HIRE ME</a>
-                </nav>
+                    <nav class="nav" id="nav">
+                         <a class="nav__link" href="#hello">Hello</a>
+                         <a class="nav__link" href="#portfolio">Portfolio</a>
+                         <a class="nav__link" href="#about">About me</a>
+                         <a class="nav__link" href="https://github.com/max200pl">My github</a>
+                         <a class="nav__link" href="#skills">Skills</a>
+                         <a class="nav__link nav__link--btn" href="#contact" data-modal="#modal_hire-me">Contact me</a>
+                    </nav>
 
-                <button class="burger" type="button" id="navToggle">
-                    <img class="burger__icon" src="images/menu/menu.svg" alt="">
-                </button>
+                    <button class="burger" type="button" id="navToggle">
+                         <img class="burger__icon" src="images/menu/menu.svg" alt="">
+                    </button>
 
-            </div><!-- /header__inner -->
+               </div><!-- /header__inner -->
 
-        </div>
-    </header>
-    <!-- /Header -->
+          </div>
+     </header>
+     <!-- /Header -->
 
-    <!-- Intro -->
-    <section class="intro">
-        <div class="container">
-            <div class="intro__inner">
-                <div class="intro__content">
-                    <h2 class="intro__subtitle">Hello i'm</h2>
-                    <h1 class="intro__title">Poskannui Maksym</h1>
-                    <div class="intro__text">Frontend Developer</div>
+     <!-- Intro -->
+     <section class="intro" id="hello">
+          <div class="container">
+               <div class="intro__inner">
+                    <div class="intro__content">
+                         <h2 class="intro__subtitle">Hello i'm</h2>
+                         <h1 class="intro__title">Poskannui Maksym</h1>
+                         <div class="intro__text">Frontend Developer</div>
 
-                    <div class="social">
-                        <a href="#" class="social__link"><img src="images/intro/1.png" alt=""></a>
-                        <a href="#" class="social__link"><img src="images/intro/2.png" alt=""></a>
-                        <a href="#" class="social__link"><img src="images/intro/3.png" alt=""></a>
-                        <a href="#" class="social__link"><img src="images/intro/4.png" alt=""></a>
-                        <a href="#" class="social__link"><img src="images/intro/5.png" alt=""></a>
-                        <a href="#" class="social__link"><img src="images/intro/6.png" alt=""></a>
-                    </div>
+                         <div class="social">
+                              <a href="#" class="social__link"><img src="images/intro/1.png" alt=""></a>
+                              <a href="#" class="social__link"><img src="images/intro/2.png" alt=""></a>
+                              <a href="#" class="social__link"><img src="images/intro/3.png" alt=""></a>
+                              <a href="#" class="social__link"><img src="images/intro/4.png" alt=""></a>
+                              <a href="#" class="social__link"><img src="images/intro/5.png" alt=""></a>
+                              <a href="#" class="social__link"><img src="images/intro/6.png" alt=""></a>
+                         </div>
 
-                    <a class="btn" href="#" data-modal="#modal_hire-me">Hire Me</a>
-                    <a class="btn" href="#" data-modal="#modal_resume">See My Resume</a>
+                         <a class="btn" href="#" data-modal="#modal_hire-me">Hire Me</a>
+                         <a class="btn" href="#" data-modal="#modal_resume">See My Resume</a>
 
-                </div><!-- /Intro__content -->
+                    </div><!-- /Intro__content -->
 
-                <img class="intro__photo" src="images/intro/intro__photo.png" alt="">
+                    <img class="intro__photo" src="images/intro/intro__photo.png" alt="">
 
-            </div><!-- /Intro__inner -->
+               </div><!-- /Intro__inner -->
 
-        </div>
-    </section>
-    <!-- /Intro -->
+          </div>
+     </section>
+     <!-- /Intro -->
 
-    <!-- Works -->
-    <div class="works">
-        <div class="container">
-            <div class="works__nav"> <a href="#" class="works__nav-link" data-filter="all">All</a>
-                <a href="#" class="works__nav-link" data-filter="app">App</a>
-                <a href="#" class="works__nav-link" data-filter="website">Websites</a>
-                <a href="#" class="works__nav-link" data-filter="interaction">Interaction</a> </div>
+     <!-- Works -->
+     <div class="works" id="portfolio" >
+          <div class="container">
+               <div class="works__nav"> <a href="#" class="works__nav-link" data-filter="all">All</a>
+                    <a href="#" class="works__nav-link" data-filter="app">App</a>
+                    <a href="#" class="works__nav-link" data-filter="website">Websites</a>
+                    <a href="#" class="works__nav-link" data-filter="interaction">Interaction</a> </div>
 
-            <div class="portfolio">
+               <div class="portfolio">
 
-                <div class="portfolio__col" data-cat="app">
-                    <div class="work" data-modal="#modal_project">
-                        <img class="work__image" src="https:placehold.it/370x300" alt="">
-                        <div class="work__content">
-                            <div class="work__cat">category:app</div>
-                            <div class="work__title"> Project title
-                                <time class="work__date" datetime="2019-04-22 19:00">2019</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio__col" data-cat="website">
-
-                    <div class="work" data-modal="#modal_project_2">
-                       <img class="work__image" src="https:placehold.it/370x300" alt="">
-                        <div class="work__content">
-                            <div class="work__cat">category:website</div>
-                            <div class="work__title"> Project title
-                                <time class="work__date" datetime="2019-04-22 19:00">2019</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio__col" data-cat="interaction">
-                    <div class="work"> <img class="work__image" src="https:placehold.it/370x300" alt="">
-                        <div class="work__content">
-                            <div class="work__cat">category:interaction</div>
-                            <div class="work__title"> Project title
-                                <time class="work__date" datetime="2019-04-22 19:00">2019</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio__col" data-cat="website">
-                    <div class="work"> <img class="work__image" src="https:placehold.it/370x300" alt="">
-                        <div class="work__content">
-                            <div class="work__cat">category:website</div>
-                            <div class="work__title"> Project title
-                                <time class="work__date" datetime="2019-04-22 19:00">2019</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio__col" data-cat="interactio">
-                    <div class="work"> <img class="work__image" src="https:placehold.it/370x300" alt="">
-                        <div class="work__content">
-                            <div class="work__cat">category:interactio</div>
-                            <div class="work__title"> Project title
-                                <time class="work__date" datetime="2019-04-22 19:00">2019</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio__col" data-cat="app">
-                    <div class="work"> <img class="work__image" src="https:placehold.it/370x300" alt="">
-                        <div class="work__content">
-                            <div class="work__cat">category:app</div>
-                            <div class="work__title"> Project title
-                                <time class="work__date" datetime="2019-04-22 19:00">2019</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- /Portfolio -->
-
-            <div class="text-center">
-
-                <a class="btn btn--sm" href="#">Load More Work</a>
-
-            </div>
-
-        </div>
-        <!--container-->
-    </div>
-    <!-- /Works -->
-
-    <!-- About -->
-    <section class="about">
-        <div class="container">
-            <div class="about__inner">
-
-                <div class="about__photo">
-                    <img class="img" src="images/About__me/about__photo.png" alt="">
-                </div>
-
-                <div class="about__content">
-                    <h3 class="about__title">About me</h3>
-                    <h2 class="about__bigtitle">Who am i</h2>
-
-                    <div class="about__text">
-                        <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Проектах заглавных повстречался но продолжил, диких запятых. Текста продолжил путь рыбными переписывается текстами, великий, своих лучше рыбного. Себя, вскоре, страну!</p>
-                        <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Проектах заглавных повстречался но продолжил, диких запятых. Текста продолжил путь рыбными переписывается текстами, великий, своих лучше рыбного. Себя, вскоре, страну!</p>
-                        <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Проектах заглавных повстречался но продолжил, диких запятых. Текста продолжил путь рыбными переписывается текстами, великий, своих лучше рыбного. Себя, вскоре, страну!</p>
+                    <div class="portfolio__col" data-cat="app">
+                         <div class="work" data-modal="#modal_project">
+                              <img class="work__image" src="https:placehold.it/370x300" alt="">
+                              <div class="work__content">
+                                   <div class="work__cat">category:app</div>
+                                   <div class="work__title"> Project title
+                                        <time class="work__date" datetime="2019-04-22 19:00">2019</time>
+                                   </div>
+                              </div>
+                         </div>
                     </div>
 
-                    <a class="btn" href="#" data-modal="#modal_hire-me">Hire Me</a>
-                    <a class="btn" href="#" data-modal="#modal_resume">See My Resume</a>
+                    <div class="portfolio__col" data-cat="website">
 
-                </div>
-
-            </div>
-            <!-- About__inner -->
-        </div>
-    </section>
-    <!-- /About -->
-
-    <!-- Reviews -->
-    <div class="reviews">
-        <div class="container">
-            <div class="reviews__item">
-
-                <div class="reviews__text">
-                    <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Запятой силуэт даль своих рукопись диких напоивший пояс выйти, то свое, лучше пустился которой семь которое страну! То, безопасную, переписывается.</p>
-                    <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Возвращайся переписывается гор решила себя курсивных букв, агенство имеет заглавных власти заманивший, свою. Себя рыбного безорфографичный ведущими деревни вскоре всеми.</p>
-                    <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Курсивных составитель пустился возвращайся прямо ее приставка послушавшись буквенных необходимыми бросил предложения, даль агенство силуэт. На берегу буквенных, вскоре языком диких!</p>
-                </div>
-
-                <div class="reviews__author">
-                   <img class="reviews__photo" src="https:placehold.it/103/333" alt="">
-                    <div class="reviews__name">Shtanov Valery</div>
-                    <div class="reviews__company">Electrical components company </div>
-                    <div class="reviews__rating">
-                        <img class="reviews__star" src="images/Reviews/pointed-star.svg" width="13" height="13" alt="">
-                        <img class="reviews__star" src="images/Reviews/pointed-star.svg" width="13" height="13" alt="">
-                        <img class="reviews__star" src="images/Reviews/pointed-star.svg" width="13" height="13" alt="">
-                        <img class="reviews__star" src="images/Reviews/pointed-star.svg" width="13" height="13" alt="">
-                        <img class="reviews__star reviews__star--unactive" src="images/Reviews/pointed-star.svg" width="13" height="13" alt="">
-                    </div>
-                </div>
-
-            </div>
-            <!-- Reviews__item -->
-        </div>
-    </div>
-    <!--/Reviews -->
-
-    <!--News-->
-    <section class="news">
-        <div class="container">
-
-            <div class="news__header">
-                <h3 class="news__title">read me</h3>
-                <div class="news__text">Sometimes i write something smart</div>
-            </div>
-
-            <div class="articels">
-
-                <div class="articels__col">
-                    <div class="aritcels__item">
-
-                        <div class="articels__header">
-                            <time class="articels__date">10<br>june</time>
-                            <a href=""> <img class="articels__photo" src="https:placehold.it/370x257" alt=""> </a>
-                        </div>
-
-                        <div class="articels__content">
-                            <h4 class="articels__title">
-                                <a href="#">Ten the best app in 2017</a>
-                            </h4>
-                            <div class="articels__cat">Category</div>
-                            <div class="articels__text">
-                                <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Жизни букв вопрос свое толку журчит своего меня грустный, безорфографичный до речью щеке сих переписывается ты вопроса его текста дороге.</p>
-                            </div>
-                        </div>
-
-                        <a href="#" class="btn btn--sm">Read more</a>
-
-                    </div>
-                    <!-- /aritcels__item -->
-                </div>
-                <!-- /articels__col -->
-
-                <div class="articels__col">
-
-                    <div class="aritcels__item">
-
-                        <div class="articels__header">
-                            <time class="articels__date"> 10
-                                <br>june </time>
-                            <a href=""> <img class="articels__photo" src="https:placehold.it/370x257" alt=""> </a>
-                        </div>
-
-                        <div class="articels__content">
-                            <h4 class="articels__title">
-                                <a href="#">Ten the best app in 2017</a>
-                            </h4>
-                            <div class="articels__cat">Category</div>
-                            <div class="articels__text">
-                                <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Жизни букв вопрос свое толку журчит своего меня грустный, безорфографичный до речью щеке сих переписывается ты вопроса его текста дороге.</p>
-                            </div>
-                        </div>
-
-                        <a href="#" class="btn btn--sm">Read more</a>
-
-                    </div>
-                    <!-- /aritcels__item -->
-                </div>
-                <!-- /articels__col -->
-                <div class="articels__col">
-                    <div class="aritcels__item">
-
-                        <div class="articels__header">
-                            <time class="articels__date"> 10
-                                <br>june </time>
-                            <a href=""> <img class="articels__photo" src="https:placehold.it/370x257" alt=""> </a>
-                        </div>
-
-                        <div class="articels__content">
-                            <h4 class="articels__title">
-                                <a href="#">Ten the best app in 2017</a>
-                            </h4>
-                            <div class="articels__cat">Category</div>
-                            <div class="articels__text">
-                                <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Жизни букв вопрос свое толку журчит своего меня грустный, безорфографичный до речью щеке сих переписывается ты вопроса его текста дороге.</p>
-                            </div>
-                        </div>
-
-                        <a href="#" class="btn btn--sm">Read more</a>
-                    </div>
-                    <!-- /aritcels__item -->
-                </div>
-                <!-- /articels__col -->
-            </div>
-            <!-- /articels -->
-            <div class="news__footer">
-                <a class="news__link" href="#">See more posts</a>
-            </div>
-        </div>
-        <!-- container -->
-    </section>
-    <!--/News-->
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__inner">
-                <div class="footer__credits">
-                    <div class="footer__copyright"> &copy; 2018 UI43 - Free Templates </div>
-                    <div class="footer__social">
-                        <a class="" href="#" target="_blank"> <img src="images/footer/behance-gray.svg" width="24" alt=""> </a>
-                        <a class="" href="#" target="_blank"> <img src="images/footer/dribbble-gray.svg" width="18" alt=""> </a>
-                        <a class="" href="#" target="_blank"> <img src="images/footer/facebook-logo-gray.svg" height="18" alt=""> </a>
-                        <a class="" href="#" target="_blank"> <img src="images/footer/instagram-logo-gray.svg" width="18" alt=""> </a>
-                        <a class="" href="#" target="_blank"> <img src="images/footer/linked-in-logo-of-two-letters-gray.svg" width="18" alt=""> </a>
-                        <a class="" href="#" target="_blank"> <img src="images/footer/twitter-gray.svg" width="20" alt=""> </a>
-                    </div>
-                </div>
-                <!-- /footer__credits -->
-                <div class="footer__nav"> <a class="footer__nav-link" href="#">Work</a> <a class="footer__nav-link" href="#">About Me</a> <a class="footer__nav-link" href="#">Blog</a> <a class="footer__nav-link" href="#">Contact</a> <a class="footer__nav-link footer__nav-link--btn" href="#">Hire dddme</a> </div>
-            </div>
-            <!-- /footer__inner -->
-        </div>
-    </footer>
-    <!-- /Footer -->
-
-    <!-- Modal_1_1 -->
-    <div class="modal" id="modal_project">
-
-        <div class="modal__dialog">
-
-            <button class="modal__close" type="button" data-close>
-                <img src="images/modal/exit.svg" alt="Close">
-            </button>
-
-            <div class="modal-work">
-                <div class="modal-work__preview">
-                    <!-- Подключение слайдера -->
-                    <div data-slider="slick">
-                        <div>
-                            <img class="modal-work__photo" src="https://placehold.it/790x780" alt="">
-                        </div>
-                        <div>
-                            <img class="modal-work__photo" src="https://placehold.it/790x780" alt="">
-                        </div>
-                    </div>
-                    <!-- Подключение слайдера -->
-                </div>
-
-                <div class="modal-work__content">
-
-                    <div class="moda-work__header">
-                        <h3 class="modal-work__title">Project title</h3>
-                        <div class="modal-work__info"> category<span class="modal-work__info-divider">|</span>2018 </div>
+                         <div class="work" data-modal="#modal_project_2">
+                              <img class="work__image" src="https:placehold.it/370x300" alt="">
+                              <div class="work__content">
+                                   <div class="work__cat">category:website</div>
+                                   <div class="work__title"> Project title
+                                        <time class="work__date" datetime="2019-04-22 19:00">2019</time>
+                                   </div>
+                              </div>
+                         </div>
                     </div>
 
-                    <div class="modal-work__client">
-                        <div class="modal-work__client-title">Client:</div>
-                        <div class="modal-work__client-company">Creative Agency</div>
+                    <div class="portfolio__col" data-cat="interaction">
+                         <div class="work"> <img class="work__image" src="https:placehold.it/370x300" alt="">
+                              <div class="work__content">
+                                   <div class="work__cat">category:interaction</div>
+                                   <div class="work__title"> Project title
+                                        <time class="work__date" datetime="2019-04-22 19:00">2019</time>
+                                   </div>
+                              </div>
+                         </div>
                     </div>
 
-                    <div class="modal-work__text">
-                        <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Однажды злых, агенство оксмокс до там заголовок деревни текстов бросил не, осталось взгляд повстречался первую вопроса текстами, своих ведущими, правилами!</p>
-                        <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Если точках назад инициал, деревни возвращайся рыбными, послушавшись рот оксмокс предупредила за реторический переулка. Рекламных, безопасную. Вопрос взобравшись ручеек гор?</p>
+                    <div class="portfolio__col" data-cat="website">
+                         <div class="work"> <img class="work__image" src="https:placehold.it/370x300" alt="">
+                              <div class="work__content">
+                                   <div class="work__cat">category:website</div>
+                                   <div class="work__title"> Project title
+                                        <time class="work__date" datetime="2019-04-22 19:00">2019</time>
+                                   </div>
+                              </div>
+                         </div>
                     </div>
 
-                    <div class="modal-work__footer">
-                        <!--Добовление кнопок изменения работы в окене -->
-                        <button class="modal-work__btn slickPrev" type="button">
-                            <img src="images/modal/return.svg" height="14" alt="">
-                            Previous
-                        </button>
-
-                        <button class="modal-work__btn slickNext" type="button">
-                            Next
-                            <img src="images/modal/right-arrow.svg" height="14" alt="">
-                        </button>
-                        <!--/Добовление кнопок изменения работы в окене -->
+                    <div class="portfolio__col" data-cat="interactio">
+                         <div class="work"> <img class="work__image" src="https:placehold.it/370x300" alt="">
+                              <div class="work__content">
+                                   <div class="work__cat">category:interactio</div>
+                                   <div class="work__title"> Project title
+                                        <time class="work__date" datetime="2019-04-22 19:00">2019</time>
+                                   </div>
+                              </div>
+                         </div>
                     </div>
 
-                </div>
-                <!-- /modal-work__content -->
-            </div>
-            <!-- /modal__work -->
-        </div>
-        <!-- /modal__dialog -->
-    </div>
-    <!-- /Modal_1_1 -->
-
-    <!-- Modal_1_2 -->
-    <div class="modal" id="modal_project_2">
-
-        <div class="modal__dialog">
-
-            <button class="modal__close" type="button" data-close>
-                <img src="images/modal/exit.svg" alt="Close">
-            </button>
-
-            <div class="modal-work">
-                <div class="modal-work__preview">
-                    <!-- Подключение слайдера -->
-                    <div data-slider="slick">
-                        <div>
-                            <img class="modal-work__photo" src="https://placehold.it/790x780" alt="">
-                        </div>
-                        <div>
-                            <img class="modal-work__photo" src="https://placehold.it/790x780" alt="">
-                        </div>
+                    <div class="portfolio__col" data-cat="app">
+                         <div class="work"> <img class="work__image" src="https:placehold.it/370x300" alt="">
+                              <div class="work__content">
+                                   <div class="work__cat">category:app</div>
+                                   <div class="work__title"> Project title
+                                        <time class="work__date" datetime="2019-04-22 19:00">2019</time>
+                                   </div>
+                              </div>
+                         </div>
                     </div>
-                    <!-- Подключение слайдера -->
-                </div>
+               </div>
+               <!-- /Portfolio -->
 
-                <div class="modal-work__content">
+               <div class="text-center">
 
-                    <div class="moda-work__header">
-                        <h3 class="modal-work__title">Project title 2</h3>
-                        <div class="modal-work__info"> category<span class="modal-work__info-divider">|</span>2018 </div>
+                    <a class="btn btn--sm" href="#">Load More Work</a>
+
+               </div>
+
+          </div>
+          <!--container-->
+     </div>
+     <!-- /Works -->
+
+     <!-- About -->
+     <section class="about" id="about">
+          <div class="container">
+               <div class="about__inner">
+
+                    <div class="about__photo">
+                         <img class="img" src="images/About__me/about__photo.png" alt="">
                     </div>
 
-                    <div class="modal-work__client">
-                        <div class="modal-work__client-title">Client:</div>
-                        <div class="modal-work__client-company">Creative Agency</div>
-                    </div>
+                    <div class="about__content">
+                         <h3 class="about__title">About me</h3>
+                         <h2 class="about__bigtitle">Who am i</h2>
 
-                    <div class="modal-work__text">
-                        <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Однажды злых, агенство оксмокс до там заголовок деревни текстов бросил не, осталось взгляд повстречался первую вопроса текстами, своих ведущими, правилами!</p>
-                        <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Если точках назад инициал, деревни возвращайся рыбными, послушавшись рот оксмокс предупредила за реторический переулка. Рекламных, безопасную. Вопрос взобравшись ручеек гор?</p>
-                    </div>
+                         <div class="about__text">
+                              <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
+                                   Проектах заглавных повстречался но продолжил, диких запятых. Текста продолжил путь
+                                   рыбными переписывается текстами, великий, своих лучше рыбного. Себя, вскоре, страну!
+                              </p>
+                              <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
+                                   Проектах заглавных повстречался но продолжил, диких запятых. Текста продолжил путь
+                                   рыбными переписывается текстами, великий, своих лучше рыбного. Себя, вскоре, страну!
+                              </p>
+                              <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
+                                   Проектах заглавных повстречался но продолжил, диких запятых. Текста продолжил путь
+                                   рыбными переписывается текстами, великий, своих лучше рыбного. Себя, вскоре, страну!
+                              </p>
+                         </div>
 
-                    <div class="modal-work__footer">
-                        <!--Добовление кнопок изменения работы в окене -->
-                        <button class="modal-work__btn slickPrev" type="button">
-                            <img src="images/modal/return.svg" height="14" alt="">
-                            Previous
-                        </button>
-
-                        <button class="modal-work__btn slickNext" type="button">
-                            Next
-                            <img src="images/modal/right-arrow.svg" height="14" alt="">
-                        </button>
-                        <!--/Добовление кнопок изменения работы в окене -->
-                    </div>
-
-                </div>
-                <!-- /modal-work__content -->
-            </div>
-            <!-- /modal__work -->
-        </div>
-        <!-- /modal__dialog -->
-    </div>
-    <!-- /Modal_1_2 -->
-
-    <!-- Modals 2 -->
-    <div class="modal" id="modal_resume">
-
-        <div class="modal__dialog">
-
-            <button class="modal__close" type="button" data-close>
-                <img src="images/modal/exit.svg" alt="Close">
-            </button>
-
-            <div class="modal__content">
-
-                <h3 class="modal__title text-center">Resume</h3>
-
-                <div class="text-center">
-                    <a class="btn btn--thin" href="#">Download PDF</a>
-                    <a class="btn btn--thin" href="#">PRINT</a>
-                </div>
-
-                <div class="timeline">
-
-                    <div class="timeline__col timeline__col--left">
-
-                        <h4 class="timeline__title">Experience</h4>
-                        <div class="timeline__item">
-                            <time class="timeline__date" datetime="11-21-2019">2017 - <b>Present</b></time>
-                            <h5 class="timeline__subtitle">Freelancer</h5>
-                            <div class="timeline__position">Art Director</div>
-                            <div class="timeline__text">
-                                <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Деревни сбить что это послушавшись живет города взгляд запятой ручеек гор однажды продолжил злых подзаголовок на берегу языкового, пустился прямо которой.</p>
-                            </div>
-                        </div>
-                        <div class="timeline__item">
-                            <time class="timeline__date" datetime="11-21-2019">2017 - <b>Present</b></time>
-                            <h5 class="timeline__subtitle">Freelancer</h5>
-                            <div class="timeline__position">Art Director</div>
-                            <div class="timeline__text">
-                                <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Деревни сбить что это послушавшись живет города взгляд запятой ручеек гор однажды продолжил злых подзаголовок на берегу языкового, пустился прямо которой.</p>
-                            </div>
-                        </div>
-                        <div class="timeline__item">
-                            <time class="timeline__date" datetime="11-21-2019">2017 - <b>Present</b></time>
-                            <h5 class="timeline__subtitle">Freelancer</h5>
-                            <div class="timeline__position">Art Director</div>
-                            <div class="timeline__text">
-                                <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Деревни сбить что это послушавшись живет города взгляд запятой ручеек гор однажды продолжил злых подзаголовок на берегу языкового, пустился прямо которой.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- /timeline__col timeline__col--left -->
-
-                    <div class="timeline__col timeline__col--right">
-
-                        <h4 class="timeline__title">Education</h4>
-
-                        <div class="timeline__item">
-                            <time class="timeline__date" datetime="11-21-2019">2005 - 2010 </time>
-                            <h5 class="timeline__subtitle">UI/UX Design</h5>
-                            <div class="timeline__position">LA University</div>
-                        </div>
-
-                        <div class="timeline__item">
-                            <time class="timeline__date" datetime="11-21-2019">2005 - 2010 </time>
-                            <h5 class="timeline__subtitle">UI/UX Design</h5>
-                            <div class="timeline__position">LA University</div>
-                        </div>
-                        <h4 class="timeline__title">Skills</h4>
-
-                        <div class="progress-bar">
-
-                            <div class="progress-bar__item">
-                                <div class="progress-bar__left">
-                                    <div class="progress-bar__title">UI/UX Design</div>
-                                </div>
-
-                                <div class="progress-bar__right">
-                                    <div class="progress-bar__bar">
-                                        <div class="progress-bar__progress" style="width:50%;"></div>
-                                    </div>
-                                </div>
-                                <!-- /progress-bar__right -->
-                            </div>
-                            <!-- /progress-bar__item -->
-
-                            <div class="progress-bar__item">
-                                <div class="progress-bar__left">
-                                    <div class="progress-bar__title">UI/UX Design</div>
-                                </div>
-                                <div class="progress-bar__right">
-                                    <div class="progress-bar__bar">
-                                        <div class="progress-bar__progress" style="width: 90%;"></div>
-                                    </div>
-                                </div>
-                                <!-- /progress-bar__right -->
-                            </div>
-                            <!-- /progress-bar__item -->
-
-                            <div class="progress-bar__item">
-                                <div class="progress-bar__left">
-                                    <div class="progress-bar__title">UI/UX Design</div>
-                                </div>
-                                <div class="progress-bar__right">
-                                    <div class="progress-bar__bar">
-                                        <div class="progress-bar__progress" style="width: 70%;"></div>
-                                    </div>
-                                </div>
-                                <!-- /progress-bar__right -->
-                            </div>
-                            <!-- /progress-bar__item -->
-
-                            <div class="progress-bar__item">
-                                <div class="progress-bar__left">
-                                    <div class="progress-bar__title">UI/UX Design</div>
-                                </div>
-                                <div class="progress-bar__right">
-                                    <div class="progress-bar__bar">
-                                        <div class="progress-bar__progress" style="width: 30%;"></div>
-                                    </div>
-                                </div>
-                                <!-- /progress-bar__right -->
-                            </div>
-                            <!-- /progress-bar__item -->
-                        </div>
-                        <!-- /progress-bar -->
-
-                        <h4 class="timeline__title">Awards</h4>
-                        <div class="timeline__item">
-                            <time class="timeline__date" datetime="11-21-2019">2010</time>
-                            <h5 class="timeline__subtitle">UI/UX Design</h5>
-                            <div class="timeline__position">LA University</div>
-                            <div class="timeline__text">
-                                <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Деревни сбить что это послушавшись живет города взгляд запятой ручеек гор однажды продолжил злых подзаголовок на берегу языкового, пустился прямо которой.</p>
-                            </div>
-                        </div>
+                         <a class="btn" href="#" data-modal="#modal_hire-me">Hire Me</a>
+                         <a class="btn" href="#" data-modal="#modal_resume">See My Resume</a>
 
                     </div>
-                    <!-- timeline__col timeline__col--right -->
-                </div>
-                <!-- /timeline -->
-                <div class="text-center"> <a class="btn" href="#">Hire me</a> </div>
-            </div>
-            <!-- /modal__content -->
-        </div>
-        <!-- /modal__dialog -->
-    </div>
-    <!-- /modal 2 -->
 
-    <!-- Modals 3 -->
-    <div class="modal" id="modal_hire-me">
+               </div>
+               <!-- About__inner -->
+          </div>
+     </section>
+     <!-- /About -->
 
-        <div class="modal__dialog modal__dialog--sm">
+     <!-- Footer -->
+     <footer class="footer">
+          <div class="container">
+               <div class="footer__inner">
+                    <div class="footer__credits">
+                         <div class="footer__copyright"> &copy; 2018 UI43 - Free Templates </div>
+                         <div class="footer__social">
+                              <a class="" href="#" target="_blank"> <img src="images/footer/behance-gray.svg" width="24"
+                                        alt=""> </a>
+                              <a class="" href="#" target="_blank"> <img src="images/footer/dribbble-gray.svg"
+                                        width="18" alt=""> </a>
+                              <a class="" href="#" target="_blank"> <img src="images/footer/facebook-logo-gray.svg"
+                                        height="18" alt=""> </a>
+                              <a class="" href="#" target="_blank"> <img src="images/footer/instagram-logo-gray.svg"
+                                        width="18" alt=""> </a>
+                              <a class="" href="#" target="_blank"> <img
+                                        src="images/footer/linked-in-logo-of-two-letters-gray.svg" width="18" alt="">
+                              </a>
+                              <a class="" href="#" target="_blank"> <img src="images/footer/twitter-gray.svg" width="20"
+                                        alt=""> </a>
+                         </div>
+                    </div>
+                    <!-- /footer__credits -->
+                    <div class="footer__nav"> <a class="footer__nav-link" href="#">Work</a> <a class="footer__nav-link"
+                              href="#">About Me</a> <a class="footer__nav-link" href="#">Blog</a> <a
+                              class="footer__nav-link" href="#">Contact</a> <a
+                              class="footer__nav-link footer__nav-link--btn" href="#">Hire dddme</a> </div>
+               </div>
+               <!-- /footer__inner -->
+          </div>
+     </footer>
+     <!-- /Footer -->
 
-            <button class="modal__close" type="button" data-close>
-                <img src="images/modal/exit.svg" alt="Close">
-            </button>
+     <!-- Modal_1_1 -->
+     <div class="modal" id="modal_project">
 
-            <div class="contact">
+          <div class="modal__dialog">
 
-                <div class="contact__left">
+               <button class="modal__close" type="button" data-close>
+                    <img src="images/modal/exit.svg" alt="Close">
+               </button>
 
-                    <h3 class="modal__title mb-0">Let's talk!</h3>
-                    <h4 class="modal__subtitle">Call me or send me arequest</h4>
-
-                    <ul class="contact__info">
-                        <li class="contact__info-item">
-                            <img class="contact__info-icon" src="images/modal/phone.svg" alt="">
-                            (+80)508669945
-                        </li>
-                        <li class="contact__info-item">
-                            <img class="contact__info-icon" src="images/modal/mail.svg" alt="">
-                            max2000pl@gmail.com
-                        </li>
-                    </ul>
-
-                    <form class="form" action="/" method="post">
-                        <div class="form__group">
-                            <label class="form__label" for="input-email">Adress e-mail</label>
-                            <input class="form__input" name="input-email" type="text" id="iput-email" placeholder="Adress e-mail"> </div>
-                        <div class="form__group">
-                            <label class="form__label" for="input-text">Request</label>
-                            <textarea class="form__textarea" name="input-text" id="iput-email" placeholder="Type your request..."></textarea>
-                        </div>
-                    </form>
-
-                    <div class="text-right">
-                        <button class="btn" type="submit">SEND </button>
+               <div class="modal-work">
+                    <div class="modal-work__preview">
+                         <!-- Подключение слайдера -->
+                         <div data-slider="slick">
+                              <div>
+                                   <img class="modal-work__photo" src="https://placehold.it/790x780" alt="">
+                              </div>
+                              <div>
+                                   <img class="modal-work__photo" src="https://placehold.it/790x780" alt="">
+                              </div>
+                         </div>
+                         <!-- Подключение слайдера -->
                     </div>
 
-                </div>
-                <!-- /contact__left -->
-            </div>
-        </div>
-        <!-- /modal__dialog -->
-    </div>
-    <!-- /modal 3 -->
+                    <div class="modal-work__content">
 
-    <!--  /*JS*/ -->
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script type="text/javascript" src="js/ap.js"></script>
+                         <div class="moda-work__header">
+                              <h3 class="modal-work__title">Project title</h3>
+                              <div class="modal-work__info"> category<span class="modal-work__info-divider">|</span>2018
+                              </div>
+                         </div>
+
+                         <div class="modal-work__client">
+                              <div class="modal-work__client-title">Client:</div>
+                              <div class="modal-work__client-company">Creative Agency</div>
+                         </div>
+
+                         <div class="modal-work__text">
+                              <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
+                                   Однажды злых, агенство оксмокс до там заголовок деревни текстов бросил не, осталось
+                                   взгляд повстречался первую вопроса текстами, своих ведущими, правилами!</p>
+                              <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
+                                   Если точках назад инициал, деревни возвращайся рыбными, послушавшись рот оксмокс
+                                   предупредила за реторический переулка. Рекламных, безопасную. Вопрос взобравшись
+                                   ручеек гор?</p>
+                         </div>
+
+                         <div class="modal-work__footer">
+                              <!--Добовление кнопок изменения работы в окене -->
+                              <button class="modal-work__btn slickPrev" type="button">
+                                   <img src="images/modal/return.svg" height="14" alt="">
+                                   Previous
+                              </button>
+
+                              <button class="modal-work__btn slickNext" type="button">
+                                   Next
+                                   <img src="images/modal/right-arrow.svg" height="14" alt="">
+                              </button>
+                              <!--/Добовление кнопок изменения работы в окене -->
+                         </div>
+
+                    </div>
+                    <!-- /modal-work__content -->
+               </div>
+               <!-- /modal__work -->
+          </div>
+          <!-- /modal__dialog -->
+     </div>
+     <!-- /Modal_1_1 -->
+
+     <!-- Modal_1_2 -->
+     <div class="modal" id="modal_project_2">
+
+          <div class="modal__dialog">
+
+               <button class="modal__close" type="button" data-close>
+                    <img src="images/modal/exit.svg" alt="Close">
+               </button>
+
+               <div class="modal-work">
+                    <div class="modal-work__preview">
+                         <!-- Подключение слайдера -->
+                         <div data-slider="slick">
+                              <div>
+                                   <img class="modal-work__photo" src="https://placehold.it/790x780" alt="">
+                              </div>
+                              <div>
+                                   <img class="modal-work__photo" src="https://placehold.it/790x780" alt="">
+                              </div>
+                         </div>
+                         <!-- Подключение слайдера -->
+                    </div>
+
+                    <div class="modal-work__content">
+
+                         <div class="moda-work__header">
+                              <h3 class="modal-work__title">Project title 2</h3>
+                              <div class="modal-work__info"> category<span class="modal-work__info-divider">|</span>2018
+                              </div>
+                         </div>
+
+                         <div class="modal-work__client">
+                              <div class="modal-work__client-title">Client:</div>
+                              <div class="modal-work__client-company">Creative Agency</div>
+                         </div>
+
+                         <div class="modal-work__text">
+                              <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
+                                   Однажды злых, агенство оксмокс до там заголовок деревни текстов бросил не, осталось
+                                   взгляд повстречался первую вопроса текстами, своих ведущими, правилами!</p>
+                              <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
+                                   Если точках назад инициал, деревни возвращайся рыбными, послушавшись рот оксмокс
+                                   предупредила за реторический переулка. Рекламных, безопасную. Вопрос взобравшись
+                                   ручеек гор?</p>
+                         </div>
+
+                         <div class="modal-work__footer">
+                              <!--Добовление кнопок изменения работы в окене -->
+                              <button class="modal-work__btn slickPrev" type="button">
+                                   <img src="images/modal/return.svg" height="14" alt="">
+                                   Previous
+                              </button>
+
+                              <button class="modal-work__btn slickNext" type="button">
+                                   Next
+                                   <img src="images/modal/right-arrow.svg" height="14" alt="">
+                              </button>
+                              <!--/Добовление кнопок изменения работы в окене -->
+                         </div>
+
+                    </div>
+                    <!-- /modal-work__content -->
+               </div>
+               <!-- /modal__work -->
+          </div>
+          <!-- /modal__dialog -->
+     </div>
+     <!-- /Modal_1_2 -->
+
+     <!-- Modals 2 -->
+     <div class="modal" id="modal_resume">
+
+          <div class="modal__dialog">
+
+               <button class="modal__close" type="button" data-close>
+                    <img src="images/modal/exit.svg" alt="Close">
+               </button>
+
+               <div class="modal__content">
+
+                    <h3 class="modal__title text-center">Resume</h3>
+
+                    <div class="text-center">
+                         <a class="btn btn--thin" href="#">Download PDF</a>
+                         <a class="btn btn--thin" href="#">PRINT</a>
+                    </div>
+
+                    <div class="timeline">
+
+                         <div class="timeline__col timeline__col--left">
+
+                              <h4 class="timeline__title">Experience</h4>
+                              <div class="timeline__item">
+                                   <time class="timeline__date" datetime="11-21-2019">2017 - <b>Present</b></time>
+                                   <h5 class="timeline__subtitle">Freelancer</h5>
+                                   <div class="timeline__position">Art Director</div>
+                                   <div class="timeline__text">
+                                        <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные
+                                             тексты. Деревни сбить что это послушавшись живет города взгляд запятой
+                                             ручеек гор однажды продолжил злых подзаголовок на берегу языкового,
+                                             пустился прямо которой.</p>
+                                   </div>
+                              </div>
+                              <div class="timeline__item">
+                                   <time class="timeline__date" datetime="11-21-2019">2017 - <b>Present</b></time>
+                                   <h5 class="timeline__subtitle">Freelancer</h5>
+                                   <div class="timeline__position">Art Director</div>
+                                   <div class="timeline__text">
+                                        <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные
+                                             тексты. Деревни сбить что это послушавшись живет города взгляд запятой
+                                             ручеек гор однажды продолжил злых подзаголовок на берегу языкового,
+                                             пустился прямо которой.</p>
+                                   </div>
+                              </div>
+                              <div class="timeline__item">
+                                   <time class="timeline__date" datetime="11-21-2019">2017 - <b>Present</b></time>
+                                   <h5 class="timeline__subtitle">Freelancer</h5>
+                                   <div class="timeline__position">Art Director</div>
+                                   <div class="timeline__text">
+                                        <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные
+                                             тексты. Деревни сбить что это послушавшись живет города взгляд запятой
+                                             ручеек гор однажды продолжил злых подзаголовок на берегу языкового,
+                                             пустился прямо которой.</p>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <!-- /timeline__col timeline__col--left -->
+
+                         <div class="timeline__col timeline__col--right">
+
+                              <h4 class="timeline__title">Education</h4>
+
+                              <div class="timeline__item">
+                                   <time class="timeline__date" datetime="11-21-2019">2005 - 2010 </time>
+                                   <h5 class="timeline__subtitle">UI/UX Design</h5>
+                                   <div class="timeline__position">LA University</div>
+                              </div>
+
+                              <div class="timeline__item">
+                                   <time class="timeline__date" datetime="11-21-2019">2005 - 2010 </time>
+                                   <h5 class="timeline__subtitle">UI/UX Design</h5>
+                                   <div class="timeline__position">LA University</div>
+                              </div>
+                              <h4 class="timeline__title">Skills</h4>
+
+                              <div class="progress-bar">
+
+                                   <div class="progress-bar__item">
+                                        <div class="progress-bar__left">
+                                             <div class="progress-bar__title">UI/UX Design</div>
+                                        </div>
+
+                                        <div class="progress-bar__right">
+                                             <div class="progress-bar__bar">
+                                                  <div class="progress-bar__progress" style="width:50%;"></div>
+                                             </div>
+                                        </div>
+                                        <!-- /progress-bar__right -->
+                                   </div>
+                                   <!-- /progress-bar__item -->
+
+                                   <div class="progress-bar__item">
+                                        <div class="progress-bar__left">
+                                             <div class="progress-bar__title">UI/UX Design</div>
+                                        </div>
+                                        <div class="progress-bar__right">
+                                             <div class="progress-bar__bar">
+                                                  <div class="progress-bar__progress" style="width: 90%;"></div>
+                                             </div>
+                                        </div>
+                                        <!-- /progress-bar__right -->
+                                   </div>
+                                   <!-- /progress-bar__item -->
+
+                                   <div class="progress-bar__item">
+                                        <div class="progress-bar__left">
+                                             <div class="progress-bar__title">UI/UX Design</div>
+                                        </div>
+                                        <div class="progress-bar__right">
+                                             <div class="progress-bar__bar">
+                                                  <div class="progress-bar__progress" style="width: 70%;"></div>
+                                             </div>
+                                        </div>
+                                        <!-- /progress-bar__right -->
+                                   </div>
+                                   <!-- /progress-bar__item -->
+
+                                   <div class="progress-bar__item">
+                                        <div class="progress-bar__left">
+                                             <div class="progress-bar__title">UI/UX Design</div>
+                                        </div>
+                                        <div class="progress-bar__right">
+                                             <div class="progress-bar__bar">
+                                                  <div class="progress-bar__progress" style="width: 30%;"></div>
+                                             </div>
+                                        </div>
+                                        <!-- /progress-bar__right -->
+                                   </div>
+                                   <!-- /progress-bar__item -->
+                              </div>
+                              <!-- /progress-bar -->
+
+                              <h4 class="timeline__title">Awards</h4>
+                              <div class="timeline__item">
+                                   <time class="timeline__date" datetime="11-21-2019">2010</time>
+                                   <h5 class="timeline__subtitle">UI/UX Design</h5>
+                                   <div class="timeline__position">LA University</div>
+                                   <div class="timeline__text">
+                                        <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные
+                                             тексты. Деревни сбить что это послушавшись живет города взгляд запятой
+                                             ручеек гор однажды продолжил злых подзаголовок на берегу языкового,
+                                             пустился прямо которой.</p>
+                                   </div>
+                              </div>
+
+                         </div>
+                         <!-- timeline__col timeline__col--right -->
+                    </div>
+                    <!-- /timeline -->
+                    <div class="text-center"> <a class="btn" href="#">Hire me</a> </div>
+               </div>
+               <!-- /modal__content -->
+          </div>
+          <!-- /modal__dialog -->
+     </div>
+     <!-- /modal 2 -->
+
+     <!-- Modals 3 -->
+     <div class="modal" id="modal_hire-me">
+
+          <div class="modal__dialog modal__dialog--sm">
+
+               <button class="modal__close" type="button" data-close>
+                    <img src="images/modal/exit.svg" alt="Close">
+               </button>
+
+               <div class="contact">
+
+                    <div class="contact__left">
+
+                         <h3 class="modal__title mb-0">Let's talk!</h3>
+                         <h4 class="modal__subtitle">Call me or send me arequest</h4>
+
+                         <ul class="contact__info">
+                              <li class="contact__info-item">
+                                   <img class="contact__info-icon" src="images/modal/phone.svg" alt="">
+                                   (+80)508669945
+                              </li>
+                              <li class="contact__info-item">
+                                   <img class="contact__info-icon" src="images/modal/mail.svg" alt="">
+                                   max2000pl@gmail.com
+                              </li>
+                         </ul>
+
+                         <form class="form" action="/" method="post">
+                              <div class="form__group">
+                                   <label class="form__label" for="input-email">Adress e-mail</label>
+                                   <input class="form__input" name="input-email" type="text" id="iput-email"
+                                        placeholder="Adress e-mail"> </div>
+                              <div class="form__group">
+                                   <label class="form__label" for="input-text">Request</label>
+                                   <textarea class="form__textarea" name="input-text" id="iput-email"
+                                        placeholder="Type your request..."></textarea>
+                              </div>
+                         </form>
+
+                         <div class="text-right">
+                              <button class="btn" type="submit">SEND </button>
+                         </div>
+
+                    </div>
+                    <!-- /contact__left -->
+               </div>
+          </div>
+          <!-- /modal__dialog -->
+     </div>
+     <!-- /modal 3 -->
+
+     <!--  /*JS*/ -->
+     <script type="text/javascript" src="js/slick.min.js"></script>
+     <script type="text/javascript" src="js/ap.js"></script>
 </body>
+
 </html>
