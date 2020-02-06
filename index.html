@@ -9,6 +9,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <title>Portfolio</title>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+     
 </head>
 
 <body>
@@ -16,14 +17,14 @@
      <header class="header">
           <div class="container">
                <div class="header__inner">
-                    <div class="user">
+                    <!-- <div class="user">
                          <div class="user__avatar"> <img src="https:placehold.it/57/333" alt=""> </div>
                          <div class="user__content">
                               <div class="user__name">Poskanniy
                                    <br> Maksym </div>
                               <div class="user__pof">Frontend Developer</div>
                          </div>
-                    </div><!-- /user -->
+                    </div>/user -->
 
 
                     <nav class="nav" id="nav">
@@ -32,7 +33,7 @@
                          <a class="nav__link" href="#about">About me</a>
                          <a class="nav__link" href="https://github.com/max200pl">My github</a>
                          <a class="nav__link" href="#skills">Skills</a>
-                         <a class="nav__link nav__link--btn" href="#contact" data-modal="#modal_hire-me">Contact me</a>
+                         <a class="nav__link nav__link--btn" data-modal="#modal_hire-me">Contact me</a>
                     </nav>
 
                     <button class="burger" type="button" id="navToggle">
@@ -68,7 +69,9 @@
 
                     </div><!-- /Intro__content -->
 
+                   <!-- /intro__photo
                     <img class="intro__photo" src="images/intro/intro__photo.png" alt="">
+                     --> 
 
                </div><!-- /Intro__inner -->
 
@@ -547,8 +550,8 @@
                </button>
 
                <div class="contact">
-
-                    <div class="contact__left">
+                    <div class="contact__content">
+                    
 
                          <h3 class="modal__title mb-0">Let's talk!</h3>
                          <h4 class="modal__subtitle">Call me or send me arequest</h4>
@@ -563,25 +566,34 @@
                                    max2000pl@gmail.com
                               </li>
                          </ul>
-
-                         <form class="form" action="/" method="post">
+                         
+                         <form class="form" id="myform" role="form">
+                              <div class="form__group">
+                                   <label class="form__label" for="input-name">Name</label>
+                                   <input class="form__input" name="name" type="text" id="input-name"
+                                        placeholder="What's your name?"> 
+                              </div>
                               <div class="form__group">
                                    <label class="form__label" for="input-email">Adress e-mail</label>
-                                   <input class="form__input" name="input-email" type="text" id="iput-email"
-                                        placeholder="Adress e-mail"> </div>
+                                   <input class="form__input" name="email" type="email"  id="iput-email" 
+                                        placeholder="Adress e-mail"> 
+                              </div>
                               <div class="form__group">
                                    <label class="form__label" for="input-text">Request</label>
-                                   <textarea class="form__textarea" name="input-text" id="iput-email"
-                                        placeholder="Type your request..."></textarea>
+                                   <textarea class="form__textarea" name="messages" id="iput-email" type="text"
+                                        placeholder="Type your request...">
+                                   </textarea>
+                              </div>
+
+                              <div class="text-right">
+                                   <button id="btn-form" class="btn btn--hide" type="submit">send</button>
                               </div>
                          </form>
 
-                         <div class="text-right">
-                              <button class="btn" type="submit">SEND </button>
-                         </div>
+                       
 
                     </div>
-                    <!-- /contact__left -->
+                    <!-- /contact__content -->
                </div>
           </div>
           <!-- /modal__dialog -->
@@ -589,8 +601,19 @@
      <!-- /modal 3 -->
 
      <!--  /*JS*/ -->
+          <!-- library -->
      <script type="text/javascript" src="js/slick.min.js"></script>
+     <script type="text/javascript" src="js/jquery.validate.js"></script>
+          <!-- /library -->
+
      <script type="text/javascript" src="js/ap.js"></script>
+     
+     <script type="text/javascript" src="js/modal.js"></script>
+
+     <script type="text/javascript" src="js/slider.js"></script>
+
+     <script type="text/javascript" src="js/myForm.js"></script>
+     
 </body>
 
 </html>

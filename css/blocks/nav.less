@@ -42,26 +42,43 @@
     text-transform: uppercase;
 
     color: @white;
+    cursor: pointer;
 
+
+    overflow: hidden;
+    padding: 10px 5px;
+
+    &:before,
     &:after {
-        position: absolute;
-        z-index: 1;
-        bottom: -5px;
-        left: 0;
-
-        width: 0;
-        height: 2px;
 
         content: '';
-        transition: width .2s linear;
+        position: absolute;
+        left: 0;
+        display: block;
+
+        width: 100%;
+        height: 1px;
+
+
+        transition: transform .5s ease;
+
 
         background-color: @white;
     }
 
-    &:hover:not(.nav__link--btn) {
-        &:after {
-            width: 100%;
-        }
+    &:before {
+        bottom: 0;
+        transform: translateX(-100%);
+    }
+
+    &:after {
+        top: 0;
+        transform: translateX(100%);
+    }
+
+    &:hover:before,
+    &:hover:after {
+        transform: translateX(0);
     }
 
     &--btn {
@@ -78,9 +95,9 @@
             color: #000;
             background-color: @white;
             box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-            transform: translateY(-7px);
+            transform: translate(0, -7px);
             transition: all 0.7s ease-in-out;
-            border: 1px solid @white;
+
         }
     }
 

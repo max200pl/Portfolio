@@ -9,7 +9,7 @@
     margin-bottom: .6rem;
 
     font-size: .8rem;
-    color:@white;
+    color: @white;
     font-weight: 700;
 }
 
@@ -23,10 +23,12 @@
     border-radius: 1.8rem;
 
     font-family: inherit;
-    font-size: .8rem;
+    font-size: 1rem;
     line-height: 1.2;
     font-weight: 300;
-    color:@white;
+    color: @black;
+
+    box-shadow: inset 2px 2px 5px rgba(28, 28, 28, 0.5), 1px 1px 5px rgb(255, 255, 255);
 
     &:focus {
         outline: none;
@@ -34,11 +36,25 @@
     }
 
     &::placeholder {
-        color:@white;
+        color: @black;
     }
 }
 
 .form__textarea {
     height: 200px;
     resize: none;
+}
+
+.valid {
+    background: url(../../images/form/check.svg) right no-repeat;
+}
+
+.error {
+    color: #ff2dff;
+}
+
+#iput-email-error,
+#input-name-error {
+    padding: 5px;
+    text-align: center;
 }
