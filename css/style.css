@@ -165,7 +165,6 @@ body.no-scroll {
 .slick-dots button:focus {
   outline: 0;
 }
-/*mixin*/
 /*Blocks*/
 .container {
   width: 100%;
@@ -1050,6 +1049,27 @@ body.no-scroll {
   font-size: 0.94rem;
   color: #fff;
   text-transform: uppercase;
+}
+.modal-success {
+  display: none;
+  position: fixed;
+  top: 20%;
+  right: 0;
+  left: 0;
+  width: 320px;
+  margin: auto;
+  z-index: 1000;
+}
+.success {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  opacity: 0;
+  background-color: #5467;
+  border: 1px solid #fff;
+  transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .timeline {
   position: relative;

@@ -12,6 +12,7 @@ $("#myform").validate({
                email: {
                     required: true, // обязательное пле ввода
                     email: true // проверка на правильный ввод email
+
                }
 
           },
@@ -35,14 +36,6 @@ $("#myform").validate({
                     .addClass(error);
           },
 
-          // ignoreTitle: true,
-
-          unhighlight: function (element, error, valid) {
-               $(element).removeClass(error).addClass(valid);
-               $(element.form).find("label[for=" + element.id + "]")
-                    .removeClass(error);
-          },
-
           onkeyup: function () {
                this.checkForm();
                if (this.valid()) { // checks form for validity
@@ -52,13 +45,6 @@ $("#myform").validate({
                }
           }
 
-          // success: function () {
-          //      $("#btn-form").addClass("light")
-          // }
-
-          // submitHandler: function () {
-          //      $("#btn-form").addClass("light");
-          // }
      }
 
 );
