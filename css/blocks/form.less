@@ -2,6 +2,7 @@
 
 .form__group {
     margin-bottom: 1.8rem;
+    position: relative;
 }
 
 .form__label {
@@ -13,8 +14,18 @@
     font-weight: 700;
 }
 
+.form__textarea {
+    height: 200px;
+    resize: none;
+
+    @media @mobile-sm {
+        height: 110px;
+    }
+}
+
 .form__input,
 .form__textarea {
+    position: relative;
     display: block;
     width: 100%;
     padding: 1.3rem 1.8rem;
@@ -38,23 +49,8 @@
     &::placeholder {
         color: @black;
     }
-}
 
-.form__textarea {
-    height: 200px;
-    resize: none;
-}
-
-.valid {
-    background: url(../../images/form/check.svg) right no-repeat;
-}
-
-.error {
-    color: #ff2dff;
-}
-
-#iput-email-error,
-#input-name-error {
-    padding: 5px;
-    text-align: center;
+    @media @mobile-sm {
+        padding: 1rem 1.8rem;
+    }
 }

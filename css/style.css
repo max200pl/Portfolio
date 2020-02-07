@@ -413,6 +413,7 @@ body.no-scroll {
   border: 1px solid #fff;
 }
 .btn--hide {
+  visibility: hidden;
   opacity: 0;
 }
 .btn + .btn {
@@ -955,11 +956,21 @@ body.no-scroll {
   color: #fff;
   font-weight: 700;
 }
+@media (max-width:565px) {
+  .modal__title {
+    font-size: 2.5rem;
+  }
+}
 .modal__subtitle {
   text-transform: uppercase;
   font-size: 1.06rem;
   color: #fff;
   font-weight: 400;
+}
+@media (max-width:565px) {
+  .modal__subtitle {
+    font-size: 0.86rem;
+  }
 }
 .modal-work {
   display: flex;
@@ -1142,6 +1153,11 @@ body.no-scroll {
   padding: 2rem;
   width: 100%;
 }
+@media (max-width:565px) {
+  .contact__content {
+    padding: 1.5rem;
+  }
+}
 .contact__info {
   font-size: 0.94rem;
   font-weight: 300;
@@ -1149,6 +1165,11 @@ body.no-scroll {
   padding: 0;
   list-style: none;
   color: #fff;
+}
+@media (max-width:565px) {
+  .contact__info {
+    margin: 1.5rem 0 2.5rem;
+  }
 }
 .contact__info-item {
   display: flex;
@@ -1163,6 +1184,7 @@ body.no-scroll {
 }
 .form__group {
   margin-bottom: 1.8rem;
+  position: relative;
 }
 .form__label {
   display: inline-block;
@@ -1171,8 +1193,18 @@ body.no-scroll {
   color: #fff;
   font-weight: 700;
 }
+.form__textarea {
+  height: 200px;
+  resize: none;
+}
+@media (max-width:565px) {
+  .form__textarea {
+    height: 110px;
+  }
+}
 .form__input,
 .form__textarea {
+  position: relative;
   display: block;
   width: 100%;
   padding: 1.3rem 1.8rem;
@@ -1194,20 +1226,11 @@ body.no-scroll {
 .form__textarea::placeholder {
   color: #000;
 }
-.form__textarea {
-  height: 200px;
-  resize: none;
-}
-.valid {
-  background: url(../../images/form/check.svg) right no-repeat;
-}
-.error {
-  color: #ff2dff;
-}
-#iput-email-error,
-#input-name-error {
-  padding: 5px;
-  text-align: center;
+@media (max-width:565px) {
+  .form__input,
+  .form__textarea {
+    padding: 1rem 1.8rem;
+  }
 }
 .burger {
   width: 30px;
@@ -1251,4 +1274,19 @@ body.no-scroll {
   transform: translateY(-7px);
   transition: all 0.7s ease-in-out;
   opacity: 1;
+  visibility: visible;
+}
+.valid {
+  background: url(../../images/form/check.svg) right no-repeat;
+}
+.error {
+  color: #ff2dff;
+}
+#iput-email-error,
+#input-name-error {
+  position: absolute;
+  top: 5px;
+  padding: 5px;
+  text-align: center;
+  top: 100%;
 }
