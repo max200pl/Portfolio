@@ -30,7 +30,7 @@ body {
   margin: 0;
   color: #fff;
   border: 1px solid #fff;
-  background-image: linear-gradient(to left top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  background-image: linear-gradient(to right top, #051937, #000, #008793, #bf0000, #f00);
 }
 body.no-scroll {
   overflow: hidden;
@@ -1167,7 +1167,7 @@ body.no-scroll {
   display: flex;
   background: url(/images/modal/cellphone-cellular-communicatio-263564.jpg) right center no-repeat;
   background-size: contain;
-  background: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  background: linear-gradient(to right top, #051937, #000, #008793, #bf0000, #f00);
 }
 .contact__content {
   padding: 2rem;
