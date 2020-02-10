@@ -76,3 +76,20 @@ $("#btn-form").click(function (event) {
                top: "-10%"
           }, 2000, "linear");
 });
+
+/*=======================Modal resume=======================*/
+
+let progress = document.querySelectorAll('[data-progress]');
+
+window.addEventListener('load', () => {
+     progress.forEach(element => {
+
+          let progress_width = +(element.getAttribute('data-progress'));
+
+          //Если наши скиллы выше 100%, немного становимся скромнее.
+          if (progress_width > 100) {
+               progress_width = 100;
+          }
+          element.style.width = progress_width + '%';
+     })
+})

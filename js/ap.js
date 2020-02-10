@@ -34,7 +34,6 @@ $(function () {
     });
 
     /* Mobli nav ========================*/
-    const navToggle = $("#navToggle");
     const nav = $("#nav");
 
     $("#navToggle").on("click", function (event) {
@@ -42,4 +41,6 @@ $(function () {
 
         nav.toggleClass("show");
     });
+
+
 });
