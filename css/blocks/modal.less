@@ -19,13 +19,15 @@
     }
 }
 
+.modal__content {
+    min-width: 767px;
+}
+
 .modal__dialog {
     width: 100%;
     max-width: 1200px;
     margin: auto;
     position: relative;
-
-    background-color: #fff;
 
     transform: scale(0);
     transition: transform .2s linear;
@@ -44,9 +46,9 @@
     border: 0;
     cursor: pointer;
 
-    position: absolute;
-    top: .9rem;
-    right: 1rem;
+    position: fixed;
+    top: 1%;
+    right: 1%;
     z-index: 1;
 
     transition: transform .2s linear;
