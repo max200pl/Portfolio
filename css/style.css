@@ -954,8 +954,8 @@ body.no-scroll {
   display: block;
   font-size: 12px;
   color: #000;
-  min-width: 200px;
-  max-width: 200px;
+  min-width: 300px;
+  max-width: 300px;
   padding-bottom: 20px;
 }
 .experince__nameProject {
@@ -994,45 +994,145 @@ body.no-scroll {
   padding-bottom: 10px;
 }
 .skills {
-  max-width: 40%;
-}
-.skills__header {
-  display: flex;
-  align-items: center;
+  display: block;
+  max-width: 400px;
+  padding-bottom: 20px;
+  padding-right: 20px;
 }
 .skills__title {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  font-size: 16px;
+  line-height: 1;
   padding-left: 5px;
+  z-index: 3;
 }
 .skills-item {
-  height: 10px;
-  border-radius: 10px;
-  border: 2px solid #D0021B;
+  height: 20px;
+  border: 1px solid #D0021B;
   position: relative;
-  margin-top: 15px;
-  margin-bottom: 35px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  z-index: 1;
 }
 .skills-item__progress {
   width: 0;
   position: absolute;
   left: 0;
   top: 0;
-  height: 6px;
+  bottom: 0;
+  height: 18px;
   background-color: #D0021B;
   transition: cubic-bezier(0.86, 0, 0.07, 1) 1s;
+  z-index: 2;
 }
-.skills-item__progress::after {
-  content: "";
+.education {
+  display: flex;
+  justify-content: space-between;
+}
+.education__data {
   display: block;
-  width: 20px;
-  height: 20px;
-  border: 3px solid #fff;
-  border-radius: 50%;
+  font-size: 12px;
+  color: #000;
+  min-width: 300px;
+  max-width: 300px;
+  padding-bottom: 20px;
+}
+.education__city {
+  font-size: 16px;
+  font-weight: 700;
+}
+.education__time {
+  font-style: italic;
+}
+.education__endDate::before {
+  content: "-";
+  padding-right: 2px;
+}
+.education__description {
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  border-left: 1px solid #6a696b;
+}
+.education__description::before {
+  content: "";
   position: absolute;
-  right: -10px;
-  top: 50%;
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
-  background-color: #D0021B;
-  transform: translatey(-50%);
+  display: block;
+  width: 10px;
+  height: 10px;
+  top: 0;
+  left: -5px;
+  border-radius: 50%;
+  background: #D0021B;
+}
+.education__specialty {
+  font-size: 12px;
+  font-weight: 400;
+  color: #000;
+  padding-bottom: 5px;
+}
+.education__universaty {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #D0021B;
+  padding-bottom: 5px;
+}
+.achievements {
+  display: flex;
+  justify-content: space-between;
+}
+.achievements__data {
+  display: block;
+  font-size: 12px;
+  color: #000;
+  min-width: 300px;
+  max-width: 300px;
+  padding-bottom: 20px;
+}
+.achievements__city {
+  font-size: 16px;
+  font-weight: 700;
+}
+.achievements__time {
+  font-style: italic;
+}
+.achievements__endDate::before {
+  content: "-";
+  padding-right: 2px;
+}
+.achievements__description {
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  border-left: 1px solid #6a696b;
+}
+.achievements__description::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  top: 0;
+  left: -5px;
+  border-radius: 50%;
+  background: #D0021B;
+}
+.achievements__specialty {
+  font-size: 12px;
+  font-weight: 400;
+  color: #000;
+  padding-bottom: 5px;
+}
+.achievements__universaty {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #D0021B;
+  padding-bottom: 5px;
 }
 /*MODAl-resume*/
 .modal-success {

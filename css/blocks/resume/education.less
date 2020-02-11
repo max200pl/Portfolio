@@ -1,11 +1,11 @@
 // main: ../../style.less
 
-.experience {
+.education {
      display: flex;
      justify-content: space-between;
 }
 
-.experince__data {
+.education__data {
      display: block;
      font-size: 12px;
      color: @black;
@@ -16,23 +16,23 @@
      padding-bottom: 20px;
 }
 
-.experince__nameProject {
+.education__city {
      font-size: 16px;
      font-weight: 700;
 }
 
-.experince__time {
+.education__time {
      font-style: italic;
 }
 
-.experince__endDate {
+.education__endDate {
      &::before {
           content: "-";
           padding-right: 2px;
      }
 }
 
-.experince__description {
+.education__description {
      display: block;
      position: relative;
      padding-left: 20px;
@@ -54,11 +54,17 @@
      }
 }
 
-.experince__typePage {
+.education__specialty {
+     font-size: 12px;
+     font-weight: 400;
+     color: @black;
+     padding-bottom: 5px;
+}
+
+.education__universaty {
      font-size: 16px;
      font-weight: 700;
      line-height: 1.5;
      color: @red;
-
-     padding-bottom: 10px;
+     padding-bottom: 5px;
 }
