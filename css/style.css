@@ -751,7 +751,7 @@ body.no-scroll {
   display: flex;
 }
 .modal__content {
-  min-width: 767px;
+  min-width: 320px;
 }
 .modal__dialog {
   width: 100%;
@@ -772,7 +772,7 @@ body.no-scroll {
   border: 0;
   cursor: pointer;
   position: fixed;
-  top: 1%;
+  top: 5px;
   right: 1%;
   z-index: 1;
   transition: transform 0.2s linear;
@@ -886,13 +886,42 @@ body.no-scroll {
 .resume-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
+  padding: 20px 40px;
+  font-size: 16px;
   font-family: "Bitter";
-  font-size: 12px;
+  background-color: #10AEDF;
+}
+@media (max-width:991px) {
+  .resume-header {
+    font-size: 14px;
+    padding: 20px 20px;
+  }
+}
+@media (max-width:767px) {
+  .resume-header {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .resume-header :nth-child(2) {
+    order: 1;
+  }
+  .resume-header :nth-child(3) {
+    order: 2;
+  }
+}
+@media (max-width:565px) {
+}
+.resume-header__text {
   font-weight: 400;
   color: #fff;
-  background-color: #10AEDF;
+  padding-right: 5px;
+  max-width: 730px;
+}
+@media (max-width:767px) {
+  .resume-header__text {
+    max-width: 400px;
+  }
 }
 .resume-header__img {
   display: block;
@@ -901,29 +930,50 @@ body.no-scroll {
   height: auto;
   padding-right: 10px;
 }
+@media (max-width:767px) {
+  .resume-header__img {
+    display: none;
+  }
+}
 .resume-header__title {
   font-size: 28px;
   line-height: 1.5em;
   font-weight: 400;
 }
 .resume-header__subtitle {
-  font-size: 16px;
   line-height: 1.2em;
   font-weight: 400;
 }
+@media (max-width:767px) {
+  .resume-header__subtitle {
+    display: none;
+  }
+}
 .resume-header__info {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 10px 0 10px;
-  font-size: 16px;
   line-height: 1.2em;
   font-weight: 400;
   border-left: 1px solid #fff;
 }
+@media (max-width:565px) {
+  .resume-header__info {
+    display: none;
+  }
+}
 .resume-header__email {
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 10px;
 }
 .resume-header__email > span {
   padding-left: 10px;
+}
+.resume-header__phone {
+  display: flex;
+  flex-wrap: wrap;
 }
 .resume-header__phone > span {
   padding-left: 10px;
