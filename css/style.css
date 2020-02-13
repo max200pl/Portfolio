@@ -1018,14 +1018,23 @@ body.no-scroll {
 }
 .experience {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  cursor: pointer;
 }
 .experince__data {
   display: block;
   font-size: 12px;
-  min-width: 300px;
-  max-width: 300px;
+  min-width: 220px;
+  max-width: 220px;
   padding-bottom: 20px;
+}
+@media (max-width:767px) {
+  .experince__data {
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border-left: 1px solid #001aff9d;
+  }
 }
 .experince__nameProject {
   font-size: 16px;
@@ -1044,6 +1053,13 @@ body.no-scroll {
   position: relative;
   padding-left: 20px;
   border-left: 1px solid #001aff9d;
+  max-width: 660px;
+}
+@media (max-width:991px) {
+  .experince__description {
+    max-width: 420px;
+    min-width: 420px;
+  }
 }
 .experince__description::before {
   content: "";
@@ -1056,11 +1072,29 @@ body.no-scroll {
   border-radius: 50%;
   background: #D0021B;
 }
+.experince__description::after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  position: absolute;
+  top: 7px;
+  left: 140px;
+  z-index: 1;
+  transform: translateY(-50%) rotate(135deg);
+}
 .experince__typePage {
   font-size: 16px;
   font-weight: 400;
   color: #10AEDF;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+}
+@media (max-width:767px) {
+  .experince__summary {
+    display: none;
+  }
 }
 .skills {
   display: block;
@@ -1133,6 +1167,7 @@ body.no-scroll {
   position: relative;
   padding-left: 20px;
   border-left: 1px solid #001aff9d;
+  max-width: 660px;
 }
 .education__description::before {
   content: "";
@@ -1146,7 +1181,7 @@ body.no-scroll {
   background: #D0021B;
 }
 .education__specialty {
-  font-size: 12px;
+  font-size: 16px;
   color: #10AEDF;
   padding-bottom: 5px;
 }

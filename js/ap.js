@@ -42,5 +42,6 @@ $(function () {
         nav.toggleClass("show");
     });
 
+    // /*==================Accordeon modal-resume========================*/
 
 });
