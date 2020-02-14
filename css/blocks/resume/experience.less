@@ -4,7 +4,6 @@
      display: flex;
      flex-wrap: wrap;
      justify-content: space-between;
-     cursor: pointer;
 }
 
 
@@ -26,7 +25,7 @@
 }
 
 .experince__nameProject {
-     font-size: 16px;
+     font-size: 18px;
      font-weight: 400;
      color: @red;
 }
@@ -49,15 +48,25 @@
 
      border-left: 1px solid @blue-border;
 
-     max-width: 660px;
+     flex-basis: 65%;
+
 
 
      @media @tablet {
-          max-width: 420px;
-          min-width: 420px;
+          flex-basis: 65%;
+     }
+
+
+     @media @mobile-sm {
+          flex-basis: 100%;
      }
 
      &::before {
+
+          @media @mobile-sm {
+               top: -42.5px;
+          }
+
           content: "";
           position: absolute;
           display: block;
@@ -70,20 +79,6 @@
           border-radius: 50%;
           background: @red;
      }
-
-     &::after {
-          content: "";
-          display: block;
-          width: 16px;
-          height: 16px;
-          border-top: 2px solid @white;
-          border-right: 2px solid @white;
-          position: absolute;
-          top: 7px;
-          left: 140px;
-          z-index: 1;
-          transform: translateY(-50%) rotate(135deg);
-     }
 }
 
 .experince__typePage {
@@ -91,10 +86,32 @@
      font-weight: 400;
      color: @blue;
 
+     display: block;
      padding-bottom: 20px;
+
+     @media @mobile {
+          cursor: pointer;
+
+          &::after {
+               content: "";
+               display: block;
+               width: 12px;
+               height: 12px;
+               border-top: 2px solid @white;
+               border-right: 2px solid @white;
+               position: absolute;
+               top: 10px;
+               left: 140px;
+               z-index: 1;
+               transform: translateY(-50%) rotate(135deg);
+               transition: 2s;
+          }
+     }
 }
 
 .experince__summary {
+
+     //transition: all 0.25s ease-in-out; 
 
      @media @mobile {
           display: none;

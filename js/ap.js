@@ -42,6 +42,25 @@ $(function () {
         nav.toggleClass("show");
     });
 
-    // /*==================Accordeon modal-resume========================*/
+    /*==================Accordeon modal-resume========================*/
+
+    $('.experince__typePage').click(function () {
+        if ($(window).width() < 760) { //при расширении меньше 760
+            $(this).toggleClass('in').next().slideToggle(); //при нажатии переключем .in и следюющи класс скраваем или показываем 
+            $('.experince__typePage').not(this).removeClass('in').next().slideUp(); // у всех остольных удаляем класс .in и подымаем слайдер в верх
+        }
+    });
+
+    $(window).resize(function () { // при изменении ширины экрана 
+        if ($(window).width() >= 760) { // больше 760 
+            $('.experince__typePage').removeClass('in'); // удаляем класс in
+            $('.experince__summary').slideDown(); //  опускаем слайдеры
+        } else {
+            $('.experince__summary').slideUp(); // иначе подымаем слайдеры
+        }
+    });
+
+
+    /*Modal-resume replace text  */
 
 });

@@ -2,6 +2,7 @@
 
 .education {
      display: flex;
+     flex-wrap: wrap-reverse;
      justify-content: space-between;
 }
 
@@ -9,10 +10,16 @@
      display: block;
      font-size: 12px;
 
-     min-width: 300px;
-     max-width: 300px;
+     min-width: 200px;
+     max-width: 220px;
 
      padding-bottom: 20px;
+
+     @media @mobile-sm {
+          padding-left: 20px;
+
+          border-left: 1px solid @blue-border;
+     }
 }
 
 .education__city {
@@ -37,7 +44,18 @@
 
      border-left: 1px solid @blue-border;
 
-     max-width: 660px;
+     flex-basis: 65%;
+
+     @media @mobile {
+          flex-basis: 55%;
+     }
+
+
+     @media @mobile-sm {
+          flex-basis: 85%;
+     }
+
+
 
      &::before {
           content: "";
@@ -46,7 +64,7 @@
           width: 10px;
           height: 10px;
 
-          top: 0;
+          top: 5px;
           left: -5px;
 
           border-radius: 50%;
@@ -54,17 +72,36 @@
      }
 }
 
+.education__universaty {
+     font-size: 18px;
+
+     line-height: 1.1;
+     color: @red;
+
+     min-width: 250px;
+     padding-bottom: 5px;
+
+}
+
 .education__specialty {
      font-size: 16px;
 
      color: @blue;
      padding-bottom: 5px;
+
+     @media @mobile {
+          padding-bottom: 20px;
+     }
+
+     @media @mobile-sm {
+          padding-bottom: 5px;
+     }
 }
 
-.education__universaty {
-     font-size: 18px;
 
-     line-height: 1.5;
-     color: @red;
-     padding-bottom: 5px;
+
+.education__summary {
+     @media @mobile {
+          display: none;
+     }
 }
