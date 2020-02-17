@@ -750,6 +750,11 @@ body.no-scroll {
 .modal.show {
   display: flex;
 }
+@media (max-width:767px) {
+  .modal {
+    padding: 0;
+  }
+}
 .modal__content {
   min-width: 320px;
 }
@@ -780,12 +785,11 @@ body.no-scroll {
 .modal__close:hover {
   transform: translateY(-3px);
 }
-@media (max-width:565px) {
+@media (max-width:767px) {
   .modal__close {
     width: 24px;
     height: 29px;
-    top: 2.5px;
-    right: 2.5px;
+    right: 10px;
   }
 }
 .modal__title {
@@ -989,6 +993,11 @@ body.no-scroll {
 .elements__container {
   padding: 0 40px 0 40px;
 }
+@media (max-width:991px) {
+  .elements__container {
+    padding: 0 20px 0 20px;
+  }
+}
 @media (max-width:565px) {
   .elements__container {
     padding: 0 20px 0 20px;
@@ -1122,7 +1131,7 @@ body.no-scroll {
   font-weight: 400;
   color: #10AEDF;
   display: block;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 @media (max-width:767px) {
   .experince__typePage {

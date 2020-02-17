@@ -18,6 +18,10 @@
     &.show {
         display: flex;
     }
+
+    @media @mobile {
+        padding: 0;
+    }
 }
 
 .modal__content {
@@ -58,12 +62,11 @@
         transform: translateY(-3px);
     }
 
-    @media @mobile-sm {
+    @media @mobile {
         width: 24px;
         height: 29px;
 
-        top: 2.5px;
-        right: 2.5px;
+        right: 10px;
 
     }
 }
