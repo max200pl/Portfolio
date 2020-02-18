@@ -9,32 +9,27 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: start;
-        overflow: hidden;
-        border: 1px solid #fff;
-        border-radius: 10px;
     }
 }
 
 .nav__link {
-
-
     font-size: .93rem;
     font-weight: 700;
 
     position: relative;
 
-    margin-left: 20px;
+    margin-left: 15px;
 
     text-decoration: none;
     text-transform: uppercase;
 
-    width: 100%;
 
     color: @white;
     cursor: pointer;
 
     overflow: hidden;
-    padding: 10px 5px 10px 40px;
+    padding: 10px 5px 10px 10px;
+
 
     &:before,
     &:after {
@@ -48,20 +43,20 @@
 
         transition: transform .5s ease;
         background-color: @white;
+
+        @media @mobile {
+            content: none;
+        }
     }
 
     &:before {
-        bottom: 1px;
+        bottom: 0px;
         transform: translateX(-100%);
     }
 
     &:after {
         top: 0;
         transform: translateX(100%);
-
-        @media @mobile {
-            transform: translateX(-100%);
-        }
     }
 
     &:hover:before,
@@ -70,12 +65,17 @@
     }
 
     &--btn {
-        padding: 10px 5px 10px 37px;
+        padding: 10px;
 
         transition: background-color .2s linear,
             .2s color linear;
-        border: 2px solid @white;
+        border: 2.3px solid @white;
         border-radius: 20px;
+
+        &:before,
+        &:after {
+            width: 0;
+        }
 
         &:hover {
             color: #000;
@@ -89,11 +89,10 @@
 
             &:before,
             &:after {
-                width: 100%;
+                width: 0;
             }
 
             transition: all 1.2s;
-
             transform: translateX(100px);
 
             &:hover {
@@ -104,32 +103,57 @@
 
     @media @mobile {
         margin-left: 0;
+        margin-bottom: 10px;
 
+        width: 100%;
 
-        &--btn:hover {
-            transform: translateX(0px);
-            transition: all 1.4s;
+        padding: 10px 5px 10px 40px;
+
+        transform: translateX(100px);
+        transition: all 1s;
+
+        &:hover {
+            &>span {
+                opacity: 1;
+            }
+
+            border-radius: 25px;
+
+            transform: translateX(-5px);
+
+            background-color: #27618c;
+            box-shadow: 4px 3px 4px @black;
         }
 
-
-        &--btn,
-        &--btn:hover {
+        &--btn {
             padding: 10px 5px 10px 40px;
-            border: none;
-            box-shadow: none;
-            background: none;
+        }
 
-            border: none;
-            border-radius: 0;
+        &--btn:hover {
             color: @white;
+            // border: none;
+            border-radius: 25px;
+            transform: translateX(-5px);
+            background-color: #27618c;
+            box-shadow: 4px 3px 4px @black;
+        }
+
+        &>span {
+            opacity: 0;
+            transition: all 2s;
         }
     }
 }
 
 .nav__img {
+    display: none;
     position: absolute;
     left: 5px;
     top: 50%;
     transform: translateY(-50%);
     z-index: 1000;
+
+    @media @mobile {
+        display: block;
+    }
 }
