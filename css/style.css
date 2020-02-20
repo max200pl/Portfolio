@@ -894,22 +894,37 @@ body.no-scroll {
 .modal-work {
   display: flex;
 }
+@media (max-width:767px) {
+  .modal-work {
+    justify-content: center;
+  }
+}
 .modal-work__preview {
-  width: 65%;
+  flex-basis: 65%;
   position: relative;
   overflow: hidden;
+  padding-right: 1rem;
+}
+@media (max-width:767px) {
+  .modal-work__preview {
+    display: none;
+  }
 }
 .modal-work__photo {
   position: absolute;
   top: 50%;
   left: 50%;
   z-index: 1;
+  max-width: 100%;
+  height: auto !important;
   transform: translate3d(-50%, -50%, 0);
 }
 .modal-work__content {
-  width: 35%;
-  padding: 3.4rem 6.6rem 1rem 1.73rem;
+  flex-basis: 35%;
+  padding: 20px;
   position: relative;
+  border: 1px solid white;
+  min-width: 320px;
 }
 .modal-work__header {
   margin-bottom: 2.2rem;
@@ -944,10 +959,10 @@ body.no-scroll {
   color: #6a696b;
 }
 .modal-work__text {
-  margin-bottom: 8.66rem;
+  margin-bottom: 3rem;
   font-size: 0.8rem;
   line-height: 2;
-  color: #6a696b;
+  color: #fff;
   font-weight: 300;
 }
 .modal-work__footer {
