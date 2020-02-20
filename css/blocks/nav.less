@@ -9,27 +9,33 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: start;
+
+        padding: 13px 0 13px 3px;
+
+        border: 1px solid #fff;
+        border-radius: 25px;
+
+        background: #62abe18a;
+        box-shadow: 0px 15px 20px rgba(16, 5, 80, 0.479);
     }
+
 }
 
 .nav__link {
+    position: relative;
+
     font-size: .93rem;
     font-weight: 700;
 
-    position: relative;
-
     margin-left: 15px;
+    padding: 10px 5px 10px 10px;
 
+    color: @white;
     text-decoration: none;
     text-transform: uppercase;
 
-
-    color: @white;
     cursor: pointer;
-
     overflow: hidden;
-    padding: 10px 5px 10px 10px;
-
 
     &:before,
     &:after {
@@ -79,8 +85,10 @@
 
         &:hover {
             color: #000;
+
             background-color: @white;
             box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+
             transform: translate(0, -7px);
             transition: all 0.7s ease-in-out;
         }
@@ -93,33 +101,34 @@
             }
 
             transition: all 1.2s;
-            transform: translateX(100px);
-
-            &:hover {
-                transform: translateX(0px);
-            }
+            transform: translateX(0);
         }
     }
 
     @media @mobile {
-        margin-left: 0;
-        margin-bottom: 10px;
-
         width: 100%;
 
+        margin-left: 0;
+        margin-bottom: 10px;
         padding: 10px 5px 10px 40px;
 
-        transform: translateX(100px);
+        transform: translateX(0);
         transition: all 1s;
+
+        &>span {
+            width: 100px;
+            opacity: 0;
+            transition: all 1s;
+        }
+
+        border-radius: 25px;
 
         &:hover {
             &>span {
                 opacity: 1;
             }
 
-            border-radius: 25px;
-
-            transform: translateX(-5px);
+            transform: translateX(-110px);
 
             background-color: #27618c;
             box-shadow: 4px 3px 4px @black;
@@ -127,33 +136,40 @@
 
         &--btn {
             padding: 10px 5px 10px 40px;
+            border: none;
         }
 
         &--btn:hover {
             color: @white;
-            // border: none;
-            border-radius: 25px;
-            transform: translateX(-5px);
+
             background-color: #27618c;
             box-shadow: 4px 3px 4px @black;
+
+            transform: translateX(-110px);
         }
 
-        &>span {
-            opacity: 0;
-            transition: all 2s;
+        &:last-child {
+            margin-bottom: 0;
         }
     }
 }
 
 .nav__img {
     display: none;
+
     position: absolute;
     left: 5px;
     top: 50%;
+
     transform: translateY(-50%);
     z-index: 1000;
 
     @media @mobile {
         display: block;
+    }
+
+    @media @mobile-sm {
+        width: 20%;
+        left: 3px;
     }
 }
