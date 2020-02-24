@@ -21,7 +21,7 @@ $(function () {
         if (cat == "all") {
             $("[data-cat]").removeClass("hide");
         } else {
-            $("[data-cat]").each(function () {
+            $("[data-cat]").each(function () {  // перебераем все data-cat через функцию .each
                 let workCat = $(this).data("cat");
 
                 if (workCat != cat) {
@@ -42,7 +42,7 @@ $(function () {
         nav.toggleClass("show");
     });
 
-    /*==================Accordeon modal-resume========================*/
+    /*Accordeon modal-resume========================*/
 
     $('.experince__typePage').click(function () {
         if ($(window).width() < 760) { //при расширении меньше 760
@@ -59,8 +59,4 @@ $(function () {
             $('.experince__summary').slideUp(); // иначе подымаем слайдеры
         }
     });
-
-
-    /*Modal-resume replace text  */
-
 });

@@ -562,6 +562,7 @@ body.no-scroll {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   transition: box-shadow 0.2s linear;
+  cursor: pointer;
 }
 .work:hover {
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
@@ -943,7 +944,7 @@ body.no-scroll {
 .modal-work__info {
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
-  color: #6a696b;
+  color: #10AEDF;
   text-transform: uppercase;
 }
 .modal-work__info-divider {
@@ -961,7 +962,7 @@ body.no-scroll {
 .modal-work__client-company {
   font-size: 0.94rem;
   font-style: italic;
-  color: #6a696b;
+  color: #10AEDF;
 }
 .modal-work__text {
   margin-bottom: 3rem;
@@ -969,6 +970,9 @@ body.no-scroll {
   line-height: 2;
   color: #fff;
   font-weight: 300;
+}
+.modal-work__text > h2 {
+  color: #10AEDF;
 }
 .modal-work__footer {
   width: 100%;
@@ -1294,7 +1298,7 @@ body.no-scroll {
   left: 0;
   top: 0;
   bottom: 0;
-  height: 20.2px;
+  height: 20.5px;
   background-color: #D0021B;
   transition: cubic-bezier(0.86, 0, 0.07, 1) 1s;
   z-index: 0;
