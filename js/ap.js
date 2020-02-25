@@ -4,10 +4,43 @@ $(function () {
     $('.nav a[href^="#"]').click(function () {
         let offset = $(".header").innerHeight();
         let target = $(this).attr('href');
-        $('html, body').animate({
-            scrollTop: $(target).offset().top - offset
-        }, 500);
-        return false;
+
+        if ($(window).width() >= 760) { // больше 760 
+            $('html, body').animate({
+                scrollTop: $(target).offset().top - offset
+            }, 500);
+            return false;
+        } else {
+            $('html, body').animate({
+                scrollTop: $(target).offset().top - 30
+            }, 500);
+            return false;
+        }
+    });
+
+    /* Scroll down ==============*/
+
+    $(document).ready(function () {
+
+        $(window).scroll(function () {
+            //Определяет положение полосы прокрутки и если ниже 100px, то появляется кнопка.
+            if ($(this).scrollTop() > 600) {
+                $(".header").css("padding", "0");
+                $('.scrollup').fadeIn();
+            } else {
+                $(".header").css("padding", "");
+                $('.scrollup').fadeOut();
+            }
+        });
+
+        $('.scrollup').click(function () {
+            //Есть еще два значения:
+            //0 - страница будет прокручена до самого налача
+            //600 - скорость анимации прокрутки
+            $("html, body").animate({ scrollTop: 0 }, 400);
+            return false;
+        });
+
     });
 
     /* Filter works=====================*/

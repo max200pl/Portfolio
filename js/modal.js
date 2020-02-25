@@ -10,8 +10,8 @@ modalCall.on("click", function (event) {
      let modalId = $this.data("modal");
 
      $(modalId).addClass("show");
-     $("body").addClass("no-scroll");
-
+     $("body").addClass("no-scroll")
+     $("body").find(".scrollup").css("display", "none");
      setTimeout(function () {
           $(modalId)
                .find(".modal__dialog")
@@ -36,6 +36,7 @@ modalClose.on("click", function (event) {
      setTimeout(function () {
           modalParent.removeClass("show");
           $("body").removeClass("no-scroll");
+
      }, 200);
 });
 
@@ -47,8 +48,10 @@ $(".modal").on("click", function (event) {
      });
 
      setTimeout(function () {
+          $("body").find(".scrollup").css("display", "");
           $this.removeClass("show");
           $("body").removeClass("no-scroll");
+
      }, 200);
 });
 

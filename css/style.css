@@ -247,9 +247,10 @@ body.no-scroll {
 @media (max-width:767px) {
   .header {
     position: fixed;
-    top: 25px;
+    top: 45px;
     right: -99px;
     z-index: 1000;
+    padding: 0;
   }
 }
 @media (max-width:565px) {
@@ -676,7 +677,7 @@ body.no-scroll {
   text-transform: uppercase;
   color: #fff;
 }
-@media (max-width:1199px) {
+@media (max-width:1200px) {
   .about__title {
     font-size: 2.5rem;
   }
@@ -696,7 +697,7 @@ body.no-scroll {
   margin-bottom: 1.4rem;
   color: rgba(255, 255, 255, 0.15);
 }
-@media (max-width:1199px) {
+@media (max-width:1200px) {
   .about__bigtitle {
     font-size: 4rem;
   }
@@ -811,6 +812,47 @@ body.no-scroll {
 }
 /*Footer*/
 /*Blocks*/
+/*Button Scroll*/
+.scrollup {
+  position: fixed;
+  bottom: 100px;
+  right: 200px;
+  width: 55px;
+  height: 55px;
+  font-size: 0;
+  opacity: 0.4;
+  display: none;
+  text-decoration: none;
+  cursor: pointer;
+  background: url("../images/scroll/button-scroll-up.svg") no-repeat;
+  background-size: 100%;
+  transition: opacity 0.2s linear;
+  z-index: 1000;
+}
+.scrollup:hover {
+  opacity: 0.8;
+}
+@media (max-width:1200px) {
+  .scrollup {
+    bottom: 100px;
+    right: 50px;
+  }
+}
+@media (max-width:1200px) {
+  .scrollup {
+    bottom: 50px;
+    right: 25px;
+  }
+}
+@media (max-width:767px) {
+  .scrollup {
+    width: 40px;
+    height: 40px;
+    bottom: 40px;
+    right: 6px;
+  }
+}
+/*Button Scroll*/
 /*MODAL*/
 .modal {
   display: none;
