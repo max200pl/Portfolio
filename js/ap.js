@@ -25,10 +25,8 @@ $(function () {
         $(window).scroll(function () {
             //Определяет положение полосы прокрутки и если ниже 100px, то появляется кнопка.
             if ($(this).scrollTop() > 600) {
-                $(".header").css("padding", "0");
                 $('.scrollup').fadeIn();
             } else {
-                $(".header").css("padding", "");
                 $('.scrollup').fadeOut();
             }
         });

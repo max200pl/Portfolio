@@ -1015,6 +1015,8 @@ body.no-scroll {
 }
 .modal-work__text > h2 {
   color: #10AEDF;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
 }
 .modal-work__footer {
   width: 100%;
@@ -1432,11 +1434,6 @@ body.no-scroll {
 @media (max-width:565px) {
   .education__specialty {
     padding-bottom: 5px;
-  }
-}
-@media (max-width:767px) {
-  .education__summary {
-    display: none;
   }
 }
 .achievements {
