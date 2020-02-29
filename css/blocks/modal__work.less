@@ -102,6 +102,10 @@
     line-height: 2;
     color: @white;
     font-weight: 300;
+
+    @media @mobile {
+        margin-bottom: 0;
+    }
 }
 
 .modal-work__footer {
@@ -127,4 +131,8 @@
     font-size: .94rem;
     color: @white;
     text-transform: uppercase;
+
+    @media @mobile {
+        display: none;
+    }
 }
