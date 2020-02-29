@@ -31,11 +31,6 @@ $(document).ready(function () {
 
           ignoreTitle: true, //игнорирование 
 
-          highlight: function (element, error, valid) {
-               $(element).addClass(error).removeClass(valid);
-               $(element.form).find("label[for=" + element.id + "]")
-                    .addClass(error);
-          },
 
           onkeyup: function () {
                this.checkForm();
@@ -49,27 +44,6 @@ $(document).ready(function () {
      }
 
      );
-
-     /*=====================Button modal form===================*/
-
-     // $("#btn-form").click(function (event) {
-
-
-     //      setTimeout(function () {
-     //           $(".modal").removeClass("show");
-     //           $("body").removeClass("no-scroll");
-     //      }, 1000);
-
-     //      $("#modal-success").css("display", "flex");
-     //      $("#modal-success")
-     //           .animate({
-     //                opacity: "1",
-     //                top: "20%"
-     //           }, 2000, "linear").animate({
-     //                opacity: "0",
-     //                top: "-10%"
-     //           }, 2000, "linear");
-     // });
 
      /*===================E-mail Ajax Send=========================*/
      $("#myform").submit(function (event) { //Change
@@ -90,8 +64,10 @@ $(document).ready(function () {
           }).done(function () {
 
                setTimeout(function () {
+                    let allInputs = $(':input');
                     // Done Functions
                     //обнуление формы при правильной отправке
+                    allInputs.removeClass("valid");
                     th.trigger("reset");
                }, 1000);
 
