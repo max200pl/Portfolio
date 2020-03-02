@@ -1,15 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:og="https://devmax.info/ns#">
 
 <head>
   <meta charset="UTF-8" />
+  <title>Portfolio</title>
+
+  <!-- link fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,700&display=swap&subset=cyrillic-ext"
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Bitter:400,400i,700&display=swap" rel="stylesheet">
+  <!-- /link fonts -->
+
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio</title>
+
+  <!-- Meta for the Open Graph -->
+  <meta property="og:title" content="Portfolio DevMax">
+  <meta property="og:site_name" content="Portfolio">
+  <meta property="og:url" content="https://devmax.info/">
+  <meta property="og:description" content="Website Portfolio from DevMax">
+  <meta property="og:image" content="images/meta/meta_img.png">
+  <meta property="og:image:width" content="500" />
+
+  <meta property="og:image:height" content="150" />
+  <!-- /meta for the Open Graph -->
+
+  <!-- Third party libraries -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+  <!-- Third party libraries -->
+
 </head>
 
 <body>
@@ -20,6 +40,7 @@
 
         <nav class="nav" id="nav">
           <a class="nav__link" href="#hello">
+
             <img class="nav__img" src="images/header/hello.svg" alt="">
             <span>Hello</span>
           </a>
@@ -143,8 +164,9 @@
 
         <div class="portfolio__col" data-cat="">
           <div class="work">
-            <img class="work__image" src="http://placeimg.com/370/289/any" alt="" />
-            <div class="work__content">
+
+            <img class="work__image" src="images/modal/modal-works-slider/none_work1_370_289.jpg" alt="" />
+            <div class=" work__content">
               <div class="work__cat">category:</div>
               <div class="work__title">
                 ...
@@ -156,8 +178,8 @@
 
         <div class="portfolio__col" data-cat="">
           <div class="work">
-            <img class="work__image" src="http://placeimg.com/370/289/any" alt="" />
-            <div class="work__content">
+            <img class="work__image" src="images/modal/modal-works-slider/none_work2_370_289.jpg" alt="" />
+            <div class=" work__content">
               <div class="work__cat">category:</div>
               <div class="work__title">
                 ...
